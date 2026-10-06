@@ -41,15 +41,22 @@
           <a class="btn" href="#contatti">Scrivimi</a>
         </div>
       </div>
-      <figure class="live" aria-label="Animazione: un tratto di strada percorso con il distacco dal riferimento aggiornato a ogni punto">
-        <div class="live-head"><span class="label">CarGuy · delta dal vivo</span><span class="label" id="lap">Settore 1/3</span></div>
-        <canvas id="trace" aria-hidden="true"></canvas>
-        <div class="readout">
-          <div class="delta"><span class="label">Delta</span><b id="delta">−0,0 s</b></div>
-          <div><span class="label">Tempo</span><b id="time">0:00</b></div>
-          <div><span class="label">km/h</span><b id="speed">0</b></div>
+      <figure class="vetrina" aria-label="Schermate di alcuni progetti">
+        <div class="stage">
+          <div class="slide is-on" data-name="CarGuy" data-kind="App per iPhone, Watch e web"><div class="dev phone"><img src="img/carguy-cruscotto.webp" width="520" height="1131" alt="CarGuy: cruscotto durante un tratto, con il distacco dal riferimento in verde"></div></div>
+          <div class="slide" data-name="cockpit" data-kind="Gestionale personale"><div class="dev browser"><div class="chrome" aria-hidden="true"><i></i><i></i><i></i><span>cockpit · Materiali</span></div><img src="img/cockpit-materiali.webp" width="1100" height="675" alt="cockpit: archivio di 562 file con filtri per tipo"></div></div>
+          <div class="slide" data-name="BibiCiclo" data-kind="Web app, dati solo sul telefono"><div class="dev phone"><img src="img/bibiciclo-schermo.webp" width="460" height="995" alt="BibiCiclo: calendario del mese con i giorni stimati"></div></div>
+          <div class="slide" data-name="NEMO" data-kind="Plugin audio AU e VST3"><div class="dev plugin"><img src="img/nemo.webp" width="509" height="758" alt="NEMO: interfaccia del compressore stereo"></div></div>
         </div>
-        <figcaption>Simulazione del cruscotto di CarGuy: il tratto si confronta con il proprio passaggio migliore, settore per settore. Verde se si guadagna, rosso se si perde.</figcaption>
+        <figcaption class="vt-cap">
+          <div class="vt-text"><span class="label" id="vt-kind">App per iPhone, Watch e web</span><b id="vt-name">CarGuy</b></div>
+          <div class="vt-seg" aria-label="Scegli la schermata">
+            <button type="button" class="on" aria-label="CarGuy" aria-pressed="true"><i></i></button>
+            <button type="button" aria-label="cockpit" aria-pressed="false"><i></i></button>
+            <button type="button" aria-label="BibiCiclo" aria-pressed="false"><i></i></button>
+            <button type="button" aria-label="NEMO" aria-pressed="false"><i></i></button>
+          </div>
+        </figcaption>
       </figure>
     </div>
   </section>
@@ -68,7 +75,7 @@
   <section class="block wrap" id="funzioni" data-sector>
     <div class="sec-head rv">
       <div>
-        <span class="label">Per associazioni e attività di Bologna</span>
+        <span class="label">Per attività, studi professionali e associazioni</span>
         <h2>Gestionali su misura, collaudati prima su di me.</h2>
       </div>
       <p>Per organizzare la mia laurea, i miei mezzi e il mio lavoro ho costruito gli stessi strumenti che una segreteria usa ogni giorno: scadenze, calendari, archivi, promemoria. Per ciascuno trovate dove l'ho già fatto e a cosa servirebbe a voi.</p>
@@ -87,15 +94,15 @@
         <div class="ex-text">
           <h3>Ogni scadenza arriva con il suo preavviso.</h3>
           <div class="pair"><span class="label">Nei miei progetti</span><p>In CarGuy ogni auto ha le sue scadenze, per data o per chilometri: tagliando, revisione, bollo, assicurazione. Ognuna ha un preavviso e, se è ricorrente, si ripianifica da sola quando la segni come fatta. In cockpit i ripassi hanno una data, e quelli in ritardo tornano in cima.</p></div>
-          <div class="pair voi"><span class="label">Nella vostra attività</span><p>Certificati medici agonistici, rinnovi del tesseramento, quote, vaccinazioni degli ospiti in pensione. Il sistema avvisa voi, e se volete anche l'interessato, prima che la scadenza arrivi.</p></div>
+          <div class="pair voi"><span class="label">Nella vostra attività</span><p>Rinnovi di contratti e abbonamenti, certificati, quote, manutenzioni di attrezzature e mezzi. Ogni scadenza ha il suo preavviso, e il sistema avvisa voi, o direttamente il cliente, prima che arrivi.</p></div>
         </div>
         <div class="mock">
           <div class="mock-bar"><span class="label">Scadenze · settimana 41</span><span class="label">esempio</span></div>
           <div class="mock-body">
-            <div class="m-row"><span>Certificato medico agonistico</span><small>Under 14 · 3 atleti</small><span class="chip late">scaduto</span></div>
-            <div class="m-row"><span>Quota secondo trimestre</span><small>Nuoto adulti · 5 iscritti</small><span class="chip soon">tra 4 giorni</span></div>
-            <div class="m-row"><span>Vaccino antirabbica</span><small>Ospite del box 3</small><span class="chip soon">tra 9 giorni</span></div>
-            <div class="m-row"><span>Assicurazione del pulmino</span><small>ricorrente, ogni 12 mesi</small><span class="chip ok">tra 41 giorni</span></div>
+            <div class="m-row"><span>Certificati da rinnovare</span><small>3 persone</small><span class="chip late">scaduti</span></div>
+            <div class="m-row"><span>Rinnovo abbonamento</span><small>5 clienti</small><span class="chip soon">tra 4 giorni</span></div>
+            <div class="m-row"><span>Manutenzione della caldaia</span><small>sede</small><span class="chip soon">tra 9 giorni</span></div>
+            <div class="m-row"><span>Assicurazione del furgone</span><small>ricorrente, ogni 12 mesi</small><span class="chip ok">tra 41 giorni</span></div>
           </div>
           <p class="mock-note">Dati di esempio. Preavviso, ricorrenza e scadenza per data o per uso funzionano come nel garage di CarGuy.</p>
         </div>
@@ -105,21 +112,21 @@
         <div class="ex-text">
           <h3>Una pagina che dice cosa fare oggi.</h3>
           <div class="pair"><span class="label">Nei miei progetti</span><p>Ogni mattina cockpit mi mostra tre cose: i ripassi in ritardo, cosa scade nei prossimi giorni e quanto manca alla prossima sessione d'esame. Sotto, il registro di quello che ho fatto, scritto in automatico.</p></div>
-          <div class="pair voi"><span class="label">Nella vostra attività</span><p>Chi apre la segreteria vede in una sola pagina cosa va sollecitato, cosa arriva questa settimana e cosa è già stato fatto, senza cercare tra fogli di calcolo e chat.</p></div>
+          <div class="pair voi"><span class="label">Nella vostra attività</span><p>Chi apre l'ufficio la mattina vede in una sola pagina cosa va sollecitato, cosa arriva questa settimana e cosa è già stato fatto, senza cercare tra fogli di calcolo e chat.</p></div>
         </div>
         <div class="mock">
           <div class="mock-bar"><span class="label">Oggi · martedì</span><span class="label">esempio</span></div>
           <div class="mock-body">
             <div class="m-tiles">
-              <div class="late"><span class="label">In ritardo</span><b>3</b><small>certificati scaduti</small></div>
+              <div class="late"><span class="label">In ritardo</span><b>3</b><small>pagamenti da sollecitare</small></div>
               <div class="soon"><span class="label">In scadenza</span><b>7</b><small>nei prossimi 7 giorni</small></div>
-              <div><span class="label">Iscrizioni</span><b>12 g</b><small>all'apertura del secondo turno</small></div>
+              <div><span class="label">Prossimo evento</span><b>12 g</b><small>alla chiusura del trimestre</small></div>
             </div>
             <span class="label">La giornata</span>
             <ul class="m-log">
-              <li><span>09:10</span><span>confermate 4 iscrizioni al corso base</span></li>
-              <li><span>11:30</span><span>approvato il sollecito della quota a 2 famiglie</span></li>
-              <li><span>17:45</span><span>spostato l'allenamento del giovedì in palestra B</span></li>
+              <li><span>09:10</span><span>confermate 4 prenotazioni</span></li>
+              <li><span>11:30</span><span>approvato il sollecito di pagamento a 2 clienti</span></li>
+              <li><span>17:45</span><span>spostato l'appuntamento del giovedì alle 15:00</span></li>
             </ul>
           </div>
           <p class="mock-note">Dati di esempio, nella stessa struttura della pagina «Oggi» di cockpit.</p>
@@ -130,7 +137,7 @@
         <div class="ex-text">
           <h3>Un calendario che conosce i vincoli.</h3>
           <div class="pair"><span class="label">Nei miei progetti</span><p>Il piano della mia laurea mette dodici esami in tre sessioni e disegna le propedeuticità come catene: se un esame in testa slitta, si vede subito tutto quello che si sposta, anche a sessioni di distanza.</p></div>
-          <div class="pair voi"><span class="label">Nella vostra attività</span><p>Corsi e livelli, dal base all'avanzato; turni di palestre e corsie; posti disponibili in pensione nei periodi di punta. Il calendario segnala i conflitti prima che diventino un problema.</p></div>
+          <div class="pair voi"><span class="label">Nella vostra attività</span><p>Appuntamenti, turni del personale, sale e attrezzature condivise, corsi a livelli: il calendario conosce i vincoli e segnala i conflitti prima che diventino un problema.</p></div>
         </div>
         <div class="mock">
           <div class="mock-bar"><span class="label">cockpit · catene di dipendenza</span><span class="label">dati reali</span></div>
@@ -143,7 +150,7 @@
         <div class="ex-text">
           <h3>Ogni documento al suo posto, e si trova.</h3>
           <div class="pair"><span class="label">Nei miei progetti</span><p>In cockpit ci sono 562 file tra lezioni, appunti, esercizi e prove d'esame, filtrabili per tipo e per corso, con la ricerca da tastiera.</p></div>
-          <div class="pair voi"><span class="label">Nella vostra attività</span><p>Moduli d'iscrizione, liberatorie, certificati, regolamenti, verbali: ogni documento ha il suo posto e si trova scrivendo due lettere.</p></div>
+          <div class="pair voi"><span class="label">Nella vostra attività</span><p>Contratti, moduli, preventivi, certificati, verbali: ogni documento ha il suo posto e si trova scrivendo due lettere.</p></div>
         </div>
         <div class="mock">
           <div class="mock-bar"><span class="label">Archivio</span><span class="label">esempio · provalo</span></div>
@@ -151,12 +158,12 @@
             <label class="m-search" for="cerca-doc"><span aria-hidden="true">⌕</span><input id="cerca-doc" type="search" placeholder="Cerca un documento (prova: certificato)" autocomplete="off"><kbd>Ctrl K</kbd></label>
             <ul class="m-docs" id="elenco-doc">
               <li><span>Modulo d'iscrizione 2026-27</span><span>modulo</span></li>
-              <li><span>Liberatoria per le immagini dei minori</span><span>liberatoria</span></li>
-              <li><span>Certificati medici · elenco scadenze</span><span>certificato</span></li>
-              <li><span>Regolamento della pensione</span><span>regolamento</span></li>
-              <li><span>Listino della stagione invernale</span><span>listino</span></li>
+              <li><span>Contratto di fornitura 2026</span><span>contratto</span></li>
+              <li><span>Certificati · elenco delle scadenze</span><span>certificato</span></li>
+              <li><span>Preventivo n. 42 · ristrutturazione</span><span>preventivo</span></li>
+              <li><span>Listino prezzi in vigore</span><span>listino</span></li>
               <li><span>Verbale dell'assemblea dei soci</span><span>verbale</span></li>
-              <li><span>Certificato vaccinale · ospite del box 3</span><span>certificato</span></li>
+              <li><span>Certificato di conformità dell'impianto</span><span>certificato</span></li>
             </ul>
             <p class="mock-note" id="nessun-doc" hidden style="padding:0">Nessun documento trovato.</p>
           </div>
@@ -167,15 +174,15 @@
         <div class="ex-text">
           <h3>Il lavoro ripetitivo lo prepara il sistema. Decidete voi.</h3>
           <div class="pair"><span class="label">Nei miei progetti</span><p>Il mio assistente personale, AgenticOS, gira con routine programmate: prepara l'agenda, smista la posta e scrive le risposte come bozze. Nessuna email parte senza la mia approvazione.</p></div>
-          <div class="pair voi"><span class="label">Nella vostra attività</span><p>Solleciti di pagamento, conferme d'iscrizione e avvisi di scadenza si preparano da soli e partono quando li approvate, con un clic.</p></div>
+          <div class="pair voi"><span class="label">Nella vostra attività</span><p>Solleciti di pagamento, conferme di prenotazione e avvisi di scadenza si preparano da soli e partono quando li approvate, con un clic.</p></div>
         </div>
         <div class="mock">
           <div class="mock-bar"><span class="label">Posta in uscita</span><span class="label">esempio · provalo</span></div>
           <div class="mock-body">
             <div class="m-mail" id="bozza">
               <span class="stato" id="bozza-stato" aria-live="polite">Bozza · in attesa della tua approvazione</span>
-              <div class="hdr"><span>A: famiglia di un'atleta Under 14</span><span>Oggetto: certificato medico in scadenza</span></div>
-              <p>Buongiorno, il certificato medico agonistico di Giulia scade il 14 ottobre. Per continuare gli allenamenti serve il rinnovo: potete inviarcelo rispondendo a questa email. Grazie!</p>
+              <div class="hdr"><span>A: un cliente</span><span>Oggetto: rinnovo in scadenza</span></div>
+              <p>Buongiorno, il suo abbonamento scade il 14 ottobre. Per rinnovarlo può rispondere a questa email o passare da noi negli orari di apertura. Grazie!</p>
               <div class="m-actions"><button type="button" id="approva">Approva</button></div>
             </div>
           </div>
@@ -187,7 +194,7 @@
         <div class="ex-text">
           <h3>Si raccoglie solo ciò che serve.</h3>
           <div class="pair"><span class="label">Nei miei progetti</span><p>In BibiCiclo i dati sulla salute non lasciano il telefono. In CarGuy le zone private vengono tagliate dalle tracce, le foto partono senza la posizione e il server conserva solo ciò che l'utente pubblica.</p></div>
-          <div class="pair voi"><span class="label">Nella vostra attività</span><p>Dati dei minori, certificati medici, recapiti dei clienti: si decide chi li vede, dove stanno e per quanto tempo si tengono, come chiede il GDPR. È la materia del mio esame di Diritto dell'Informatica.</p></div>
+          <div class="pair voi"><span class="label">Nella vostra attività</span><p>Recapiti dei clienti, documenti sanitari, dati dei minori: si decide chi li vede, dove stanno e per quanto tempo si tengono, come chiede il GDPR. È la materia del mio esame di Diritto dell'Informatica.</p></div>
         </div>
         <div class="mock">
           <div class="mock-bar"><span class="label">Dove finiscono i dati</span><span class="label">regole reali</span></div>
@@ -217,7 +224,7 @@
       <ul class="who-facts">
         <li><span class="label">Studi</span><span>Ingegneria informatica, Alma Mater Studiorum – Università di Bologna</span></li>
         <li><span class="label">Sport</span><span>Basket nella Fortitudo fino all'Under 19 Silver: le società sportive le conosco dal campo e dagli spogliatoi.</span></li>
-        <li><span class="label">Musica</span><span>Produco musica, e alcuni strumenti per farla li ho programmati io.</span></li>
+        <li><span class="label">Passioni</span><span>Sistemi, hardware, suono e motori: molti dei miei progetti nascono da lì.</span></li>
         <li><span class="label">Contatto</span><span><a href="#contatti">lorenzo.bernardini777@gmail.com</a></span></li>
       </ul>
     </div>
@@ -273,10 +280,6 @@
         </figure>
       </div>
       <div style="padding: 0 clamp(20px, 4vw, 40px) clamp(20px, 4vw, 40px)">
-        <figure class="tav-fig" style="gap:10px">
-          <img class="strip wipe" src="img/carguy-schermate.webp" width="1214" height="500" alt="Cinque schermate di CarGuy: garage, elenco dei giri, dettaglio di un giro con mappa, tratto con confronto per settori, migliori tempi da 0 a 100">
-          <figcaption>Garage, giri, dettaglio di un giro, confronto per settori su un tratto, prove di accelerazione.</figcaption>
-        </figure>
       </div>
     </article>
 
@@ -310,7 +313,7 @@
             <p>Le pagine si rigenerano dai dati: nessuna informazione è scritta due volte, quindi nessuna può essere vecchia.</p>
             <p>Il riepilogo della giornata lo scrive un modello che gira sul mio computer: i miei appunti non escono di casa.</p>
           </div>
-          <p class="serve"><strong>Cosa dimostra:</strong> è un gestionale in piena regola, con scadenze, calendario con vincoli, archivio e registro. Con altri dati diventa la segreteria di una polisportiva o il registro di una pensione per cani.</p>
+          <p class="serve"><strong>Cosa dimostra:</strong> è un gestionale in piena regola, con scadenze, calendario con vincoli, archivio e registro. Con altri dati diventa la segreteria di un'associazione, l'agenda di uno studio o il registro di un'attività.</p>
           <div class="links">
             <a href="https://github.com/lberna777/cockpit" target="_blank" rel="noopener">Codice sorgente <span>↗</span></a>
           </div>
@@ -318,17 +321,71 @@
       </div>
     </article>
 
-    <!-- Tavola 03 · BibiCiclo -->
+    <!-- Tavola 03 · AgenticOS -->
     <article class="tavola rv">
       <div class="cartiglio">
         <div><span class="label">Tav.</span><span class="tav">03</span></div>
+        <div><span class="label">Progetto</span><div class="name">AgenticOS</div></div>
+        <div><span class="label">Piattaforme</span><div class="v">Mac e Linux · pagina locale</div></div>
+        <div><span class="label">Periodo</span><div class="v">giu – set 2026</div></div>
+        <div><span class="label">Stato</span><div class="v">136 esecuzioni registrate</div></div>
+      </div>
+      <div class="tav-body">
+        <div class="tav-text">
+          <h3>Un assistente che organizza la giornata, e chiede prima di agire.</h3>
+          <p class="intro">AgenticOS è il mio sistema di organizzazione personale. Divide il lavoro in aree (studio, posta e calendario, ricerca, progetti audio) e fa girare da solo le routine che mi preparano la giornata.</p>
+          <ul class="feat">
+            <li><span class="label">Routine</span><span>Ogni mattina la nota del giorno e l'agenda, ogni sera la memoria riordinata, ogni domenica il riepilogo dello studio. Programmate con i timer del sistema, su Mac e su Linux.</span></li>
+            <li><span class="label">Posta</span><span>Smista i messaggi e prepara le risposte come bozze: l'invio richiede sempre la mia conferma.</span></li>
+            <li><span class="label">Memoria</span><span>Un archivio di note in due livelli: tutto entra grezzo e ogni notte viene ordinato in pagine collegate. Niente viene cancellato.</span></li>
+            <li><span class="label">Registro</span><span>Ogni esecuzione lascia un resoconto con durata, esito e costo, letto da una pagina di controllo.</span></li>
+          </ul>
+          <div class="scelte">
+            <span class="label">Scelte di progetto</span>
+            <p>Una routine non parte se la precedente è ancora in corso: meglio saltare un giro che fare due volte la stessa cosa.</p>
+            <p>La pagina di controllo risponde solo sul mio computer: nessun dato esce dalla macchina.</p>
+          </div>
+          <p class="serve"><strong>Cosa dimostra:</strong> automazioni che lavorano da sole ma restano sotto controllo, con orari, registri e conferme. È lo schema di promemoria, solleciti e riepiloghi automatici per qualunque attività.</p>
+        </div>
+        <figure class="tav-fig">
+          <div class="mock">
+            <div class="mock-bar"><span class="label">Routine · una giornata</span><span class="label">orari reali</span></div>
+            <div class="mock-body">
+              <div class="day" aria-hidden="true">
+                <div class="day-track">
+                  <span class="day-now"></span>
+                  <span class="day-mark up" style="--t:.2708"><b>06:30</b>nota del giorno</span>
+                  <span class="day-mark" style="--t:.3125"><b>07:30</b>agenda</span>
+                  <span class="day-mark up end" style="--t:.9375"><b>22:30</b>memoria</span>
+                </div>
+                <div class="day-ruler"><span>00</span><span>06</span><span>12</span><span>18</span><span>24</span></div>
+              </div>
+              <span class="label">Registro delle esecuzioni</span>
+              <ul class="runs">
+                <li><span>06:30</span><span>Nota del giorno</span><span class="chip ok">eseguita</span></li>
+                <li><span>07:30</span><span>Agenda del mattino · 13 s</span><span class="chip ok">eseguita</span></li>
+                <li><span>22:30</span><span>Riordino della memoria</span><span class="chip ok">eseguita</span></li>
+                <li><span>dom 18:00</span><span>Riepilogo settimanale dello studio</span><span class="chip ok">eseguita</span></li>
+                <li><span>06:30</span><span>Nota del giorno · un'altra esecuzione era in corso</span><span class="chip soon">saltata</span></li>
+              </ul>
+            </div>
+            <p class="mock-note">Orari e tipi di esito presi dalle routine vere; le righe del registro sono un esempio.</p>
+          </div>
+        </figure>
+      </div>
+    </article>
+
+    <!-- Tavola 04 · BibiCiclo -->
+    <article class="tavola rv">
+      <div class="cartiglio">
+        <div><span class="label">Tav.</span><span class="tav">04</span></div>
         <div><span class="label">Progetto</span><div class="name">BibiCiclo</div></div>
         <div><span class="label">Piattaforme</span><div class="v">web app installabile</div></div>
         <div><span class="label">Periodo</span><div class="v">lug – ago 2026</div></div>
         <div><span class="label">Stato</span><div class="v">pubblicata, codice aperto</div></div>
       </div>
-      <div class="tav-body">
-        <figure class="tav-fig" style="order:2">
+      <div class="tav-body flip">
+        <figure class="tav-fig">
           <div class="plate"><div class="phone wipe" style="max-width:300px"><img src="img/bibiciclo-calendario.webp" width="460" height="578" alt="Calendario di BibiCiclo, ottobre 2026: giorni fertili in verde, ciclo previsto con bordo tratteggiato dal 19 al 23"></div></div>
           <figcaption>Il calendario con i giorni stimati. Dati di esempio.</figcaption>
         </figure>
@@ -341,7 +398,7 @@
             <li><span class="label">Backup</span><span>Esportazione e ripristino dei dati; il ripristino dichiara quante voci ha scartato, invece di perderle in silenzio.</span></li>
             <li><span class="label">Dettagli</span><span>Date corrette anche al cambio dell'ora legale, aree di tocco di almeno 44 punti come chiedono le linee guida Apple.</span></li>
           </ul>
-          <p class="serve"><strong>Cosa dimostra:</strong> come si trattano dati sensibili. È l'approccio che serve a una palestra con i certificati medici o a una pensione per animali con i dati dei clienti.</p>
+          <p class="serve"><strong>Cosa dimostra:</strong> come si trattano dati sensibili. È l'approccio che serve a chiunque custodisca dati sanitari o personali dei propri clienti.</p>
           <div class="links">
             <a href="https://lberna777.github.io/bibiciclo/" target="_blank" rel="noopener">Apri l'app <span>↗</span></a>
             <a href="https://github.com/lberna777/bibiciclo" target="_blank" rel="noopener">Codice sorgente <span>↗</span></a>
@@ -350,29 +407,61 @@
       </div>
     </article>
 
-    <!-- Tavola 04 · Diritto Quiz T -->
+    <!-- Tavola 05 · UniCode -->
     <article class="tavola rv">
       <div class="cartiglio">
-        <div><span class="label">Tav.</span><span class="tav">04</span></div>
+        <div><span class="label">Tav.</span><span class="tav">05</span></div>
+        <div><span class="label">Progetto</span><div class="name">UniCode</div></div>
+        <div><span class="label">Piattaforme</span><div class="v">Claude Code · Markdown · git</div></div>
+        <div><span class="label">Periodo</span><div class="v">apr 2026 – oggi</div></div>
+        <div><span class="label">Stato</span><div class="v">in uso, codice aperto</div></div>
+      </div>
+      <div class="tav-body">
+        <div class="tav-text">
+          <h3>Studiare con l'intelligenza artificiale, senza farsi sostituire.</h3>
+          <p class="intro">UniCode è il mio sistema di studio: trasforma le slide dei corsi in lezioni, guida la pratica, rielabora i miei appunti e prepara le simulazioni d'esame. Leggere non basta: ogni passaggio mi chiede di fare qualcosa prima che l'assistente intervenga.</p>
+          <ul class="feat">
+            <li><span class="label">Comandi</span><span>Lezione, appunti, ripasso, simulazione, analisi delle lacune, verifica: ognuno con un compito preciso e un formato di uscita stabilito.</span></li>
+            <li><span class="label">Regole</span><span>Un file di istruzioni dice all'assistente chi sono, come imparo e quali regole non si saltano. La prima: niente contenuti senza aver letto la fonte originale.</span></li>
+            <li><span class="label">Memoria</span><span>Stato dei moduli, registro delle sessioni, errori ricorrenti e calendario dei ripassi, letti da ogni comando.</span></li>
+            <li><span class="label">Verifica</span><span>Un comando rilegge il PDF del corso e segnala lacune, termini imprecisi e incoerenze nei materiali generati.</span></li>
+          </ul>
+          <div class="scelte">
+            <span class="label">Scelte di progetto</span>
+            <p>L'assistente lavora sui miei tentativi, non al mio posto: prima scrivo i miei appunti, errori compresi, poi li correggiamo.</p>
+            <p>Le fonti vengono prima di tutto: se il PDF non c'è, la lezione non si genera.</p>
+          </div>
+          <p class="serve"><strong>Cosa dimostra:</strong> so usare questi strumenti con metodo: istruzioni precise, fonti obbligatorie, controlli contro l'originale. È lo stesso rigore che porto nei lavori per i clienti.</p>
+          <div class="links">
+            <a href="https://github.com/lberna777/UniCode" target="_blank" rel="noopener">Codice sorgente <span>↗</span></a>
+          </div>
+        </div>
+        <figure class="tav-fig">
+          <div class="mock">
+            <div class="mock-bar"><span class="label">Il ciclo di ogni modulo</span><span class="label">chi fa cosa</span></div>
+            <ol class="ciclo">
+              <li><b>Lezione</b><span>L'assistente legge le slide originali e scrive la lezione con gli esercizi.</span><i class="who ai">assistente</i></li>
+              <li><b>Pratica</b><span>Svolgo gli esercizi su una macchina virtuale o rispondo a voce.</span><i class="who me">io</i></li>
+              <li><b>Appunti grezzi</b><span>Scrivo i miei appunti, con errori e domande aperte.</span><i class="who me">io</i></li>
+              <li><b>Appunti definitivi</b><span>Risponde a ogni domanda, corregge gli errori, colma le lacune.</span><i class="who ai">assistente</i></li>
+              <li><b>Chiusura</b><span>Registro della sessione, prossimo ripasso, salvataggio su git.</span><i class="who auto">automatico</i></li>
+            </ol>
+            <p class="mock-note">Ogni modulo passa da questi cinque passaggi, in quest'ordine. Il comando di verifica può controllarne i materiali in qualsiasi momento.</p>
+          </div>
+        </figure>
+      </div>
+    </article>
+
+    <!-- Tavola 06 · Diritto Quiz T -->
+    <article class="tavola rv">
+      <div class="cartiglio">
+        <div><span class="label">Tav.</span><span class="tav">06</span></div>
         <div><span class="label">Progetto</span><div class="name">Diritto Quiz T</div></div>
         <div><span class="label">Piattaforme</span><div class="v">app desktop Linux</div></div>
         <div><span class="label">Periodo</span><div class="v">giu 2026</div></div>
         <div><span class="label">Stato</span><div class="v">versione 0.1 funzionante</div></div>
       </div>
       <div class="tav-body flip">
-        <div class="tav-text" style="order:2">
-          <h3>Ripasso a quiz, come per la patente, per un esame universitario.</h3>
-          <p class="intro">Simulazioni d'esame con timer e voto, ripasso per argomento e un sistema che ripropone le domande sbagliate a intervalli crescenti finché non restano in memoria.</p>
-          <ul class="feat">
-            <li><span class="label">Archivio</span><span>362 domande su 13 moduli, dal diritto d'autore al GDPR e all'AI Act, ognuna con la spiegazione della risposta.</span></li>
-            <li><span class="label">Ripetizione</span><span>Metodo Leitner a cinque scatole: un errore torna subito, una risposta giusta allontana la domanda di 1, 3, 7, 16 giorni.</span></li>
-            <li><span class="label">Domande nuove</span><span>Generate in modo assistito, controllate in automatico contro la fonte e approvate a mano prima di entrare nell'archivio.</span></li>
-          </ul>
-          <p class="serve"><strong>Cosa dimostra:</strong> gestione di contenuti strutturati, punteggi e statistiche. Lo stesso nucleo regge qualunque materia.</p>
-          <div class="links">
-            <a href="https://github.com/lberna777/diritto-quiz-app" target="_blank" rel="noopener">Codice sorgente <span>↗</span></a>
-          </div>
-        </div>
         <div class="tav-fig">
           <div class="quiz" id="quiz">
             <span class="label">Prova una domanda · modulo D8, Privacy e GDPR</span>
@@ -390,26 +479,35 @@
             <button type="button" class="quiz-reset" id="quiz-reset" hidden>Riprova</button>
           </div>
         </div>
+        <div class="tav-text">
+          <h3>Ripasso a quiz, come per la patente, per un esame universitario.</h3>
+          <p class="intro">Simulazioni d'esame con timer e voto, ripasso per argomento e un sistema che ripropone le domande sbagliate a intervalli crescenti finché non restano in memoria.</p>
+          <ul class="feat">
+            <li><span class="label">Archivio</span><span>362 domande su 13 moduli, dal diritto d'autore al GDPR e all'AI Act, ognuna con la spiegazione della risposta.</span></li>
+            <li><span class="label">Ripetizione</span><span>Metodo Leitner a cinque scatole: un errore torna subito, una risposta giusta allontana la domanda di 1, 3, 7, 16 giorni.</span></li>
+            <li><span class="label">Domande nuove</span><span>Generate in modo assistito, controllate in automatico contro la fonte e approvate a mano prima di entrare nell'archivio.</span></li>
+          </ul>
+          <p class="serve"><strong>Cosa dimostra:</strong> gestione di contenuti strutturati, punteggi e statistiche. Lo stesso nucleo regge qualunque materia.</p>
+          <div class="links">
+            <a href="https://github.com/lberna777/diritto-quiz-app" target="_blank" rel="noopener">Codice sorgente <span>↗</span></a>
+          </div>
+        </div>
       </div>
     </article>
 
-    <!-- Tavola 05 · Plugin audio -->
+    <!-- Tavola 07 · Plugin audio -->
     <article class="tavola rv">
       <div class="cartiglio">
-        <div><span class="label">Tav.</span><span class="tav">05</span></div>
+        <div><span class="label">Tav.</span><span class="tav">07</span></div>
         <div><span class="label">Progetto</span><div class="name">Plugin audio</div></div>
         <div><span class="label">Formati</span><div class="v">AU · VST3 · standalone</div></div>
         <div><span class="label">Periodo</span><div class="v">mag – ago 2026</div></div>
         <div><span class="label">Stato</span><div class="v">AU e VST3 compilati</div></div>
       </div>
       <div class="tav-body">
-        <figure class="tav-fig" style="order:2">
-          <div class="plate"><img class="wipe" src="img/nemo.webp" width="509" height="758" alt="Interfaccia del compressore NEMO: fader di ingresso e uscita, manopole per filtri, dinamica, saturazione e allargamento stereo, misuratore di livello"></div>
-          <figcaption>NEMO, compressore stereo per il bus di mix, con interfaccia fotorealistica.</figcaption>
-        </figure>
         <div class="tav-text">
           <h3>Strumenti per produrre musica, in C++ e in tempo reale.</h3>
-          <p class="intro">Faccio anche musica, e alcuni strumenti me li sono costruiti. Un plugin audio elabora il suono decine di migliaia di volte al secondo: un errore si sente subito, quindi qui la verifica non è facoltativa.</p>
+          <p class="intro">Il suono mi appassiona, e alcuni strumenti per lavorarlo me li sono costruiti. Un plugin audio elabora il suono decine di migliaia di volte al secondo: un errore si sente subito, quindi qui la verifica non è facoltativa.</p>
           <div class="plugins">
             <div><h4>NEMO</h4><p>Compressore stereo con filtri, saturazione a nastro e allargamento Mid/Side. Mac (Apple Silicon e Intel) e Linux.</p></div>
             <div><h4>FreakFM</h4><p>Sintetizzatore FM a 4 operatori con sequencer interno, validato con pluginval al livello 8 senza errori.</p></div>
@@ -422,17 +520,13 @@
             <a href="https://github.com/lberna777/plugin-creator" target="_blank" rel="noopener">Plugin-Creator <span>↗</span></a>
           </div>
         </div>
+        <figure class="tav-fig">
+          <div class="plate"><img class="wipe" src="img/nemo.webp" width="509" height="758" alt="Interfaccia del compressore NEMO: fader di ingresso e uscita, manopole per filtri, dinamica, saturazione e allargamento stereo, misuratore di livello"></div>
+          <figcaption>NEMO, compressore stereo per il bus di mix, con interfaccia fotorealistica.</figcaption>
+        </figure>
       </div>
     </article>
 
-    <!-- Strumenti di lavoro -->
-    <div class="rv">
-      <span class="label">Fuori tavola · altri strumenti che uso ogni giorno</span>
-      <div class="tools" style="margin-top:12px;grid-template-columns:repeat(2,minmax(0,1fr))">
-        <div><h4>UniCode</h4><p>Il mio sistema di studio: dalle slide del corso a lezioni strutturate, esercizi su macchina virtuale, appunti rielaborati e simulazioni d'esame. Pubblicato come progetto aperto.</p><div class="links" style="margin-top:10px"><a href="https://github.com/lberna777/UniCode" target="_blank" rel="noopener">Codice <span>↗</span></a></div></div>
-        <div><h4>AgenticOS</h4><p>Un assistente personale con aree separate (studio, email, ricerca, musica), routine programmate che lasciano un registro e una pagina di controllo locale. Le email le prepara, non le spedisce.</p></div>
-      </div>
-    </div>
   </section>
 
   <!-- Metodo -->
@@ -442,7 +536,7 @@
         <span class="label">Metodo</span>
         <h2>Cinque passaggi, sempre gli stessi.</h2>
       </div>
-      <p>Il metodo è quello di un progetto di ingegneria in piccolo: requisiti scritti, costruzione per passi verificabili, controlli prima della consegna. Vale per un plugin audio come per il modulo d'iscrizione di una polisportiva.</p>
+      <p>Il metodo è quello di un progetto di ingegneria in piccolo: requisiti scritti, costruzione per passi verificabili, controlli prima della consegna. Vale per un plugin audio come per il gestionale di un piccolo ufficio.</p>
     </div>
     <div class="method-grid">
       <ol class="steps">

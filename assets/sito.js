@@ -84,6 +84,29 @@
   }
   window.addEventListener('scroll', onScroll, { passive: true }); window.addEventListener('resize', onScroll); onScroll();
 
+  /* Vetrina in apertura */
+  var vt = document.querySelector('.vetrina');
+  if (vt) {
+    var slides = vt.querySelectorAll('.slide'), segs = vt.querySelectorAll('.vt-seg button');
+    var vName = document.getElementById('vt-name'), vKind = document.getElementById('vt-kind'), vText = vt.querySelector('.vt-text');
+    var cur = 0;
+    function show(n) {
+      if (n === cur) return;
+      var prev = slides[cur]; prev.classList.remove('is-on'); prev.classList.add('is-out');
+      setTimeout(function () { prev.classList.remove('is-out'); }, 900);
+      slides[n].classList.add('is-on');
+      Array.prototype.forEach.call(segs, function (b, k) { b.classList.toggle('on', k === n); b.setAttribute('aria-pressed', k === n); });
+      vName.textContent = slides[n].getAttribute('data-name'); vKind.textContent = slides[n].getAttribute('data-kind');
+      vText.classList.remove('swap'); void vText.offsetWidth; vText.classList.add('swap');
+      cur = n;
+    }
+    Array.prototype.forEach.call(segs, function (b, k) {
+      b.addEventListener('click', function () { show(k); });
+      b.querySelector('i').addEventListener('animationend', function () { if (!reduce) show((k + 1) % slides.length); });
+    });
+    if ('IntersectionObserver' in window) new IntersectionObserver(function (es) { vt.classList.toggle('paused', !es[0].isIntersecting); }).observe(vt);
+  }
+
   /* Esploratore delle funzioni: schede con tastiera */
   var tabs = Array.prototype.slice.call(document.querySelectorAll('[role="tab"]'));
   function selectTab(t, focus) {
