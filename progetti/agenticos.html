@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Nota del giorno e agenda ogni mattina, posta smistata in bozze, memoria riordinata ogni notte. Ogni esecuzione lascia un resoconto, e nessuna email parte senza conferma.">
+<title>AgenticOS · Lorenzo Bernardini</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../assets/stile.css">
+<!-- /HEAD -->
+</head>
+<body>
+<!-- BODY -->
+<header class="top">
+  <div class="wrap top-row">
+    <a class="brand" href="../index.html">Lorenzo Bernardini</a>
+    <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav class="nav" id="menu" aria-label="Principale">
+      <a href="../servizi.html">Cosa faccio</a><a href="../progetti.html" aria-current="page">Progetti</a><a href="../chisono.html">Chi sono</a>
+      <a class="nav-cta" href="../contatti.html">Scrivimi</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inizio">
+  <div class="wrap">
+    <div class="proj-head">
+      <div>
+        <nav class="crumbs" aria-label="Percorso"><a href="../progetti.html">Progetti</a><span>/</span><span>AgenticOS</span></nav>
+        <h1>AgenticOS</h1>
+        <p class="lede">Nota del giorno e agenda ogni mattina, posta smistata in bozze, memoria riordinata ogni notte. Ogni esecuzione lascia un resoconto, e nessuna email parte senza conferma.</p>
+      </div>
+      <div class="info rv"><div><span class="label">Piattaforme</span><span class="v">Mac e Linux</span></div><div><span class="label">Periodo</span><span class="v">giugno – settembre 2026</span></div><div><span class="label">Stato</span><span class="v">136 esecuzioni registrate</span></div></div>
+    </div>
+    <div class="proj-visual rv"><div class="mock">
+            <div class="mock-bar"><span class="label">Routine · una giornata</span><span class="label">orari reali</span></div>
+            <div class="mock-body">
+              <div class="day" aria-hidden="true">
+                <div class="day-track">
+                  <span class="day-now"></span>
+                  <span class="day-mark up" style="--t:.2708"><b>06:30</b>nota del giorno</span>
+                  <span class="day-mark" style="--t:.3125"><b>07:30</b>agenda</span>
+                  <span class="day-mark up end" style="--t:.9375"><b>22:30</b>memoria</span>
+                </div>
+                <div class="day-ruler"><span>00</span><span>06</span><span>12</span><span>18</span><span>24</span></div>
+              </div>
+              <span class="label">Registro delle esecuzioni</span>
+              <ul class="runs">
+                <li><span>06:30</span><span>Nota del giorno</span><span class="chip ok">eseguita</span></li>
+                <li><span>07:30</span><span>Agenda del mattino · 13 s</span><span class="chip ok">eseguita</span></li>
+                <li><span>22:30</span><span>Riordino della memoria</span><span class="chip ok">eseguita</span></li>
+                <li><span>dom 18:00</span><span>Riepilogo settimanale dello studio</span><span class="chip ok">eseguita</span></li>
+                <li><span>06:30</span><span>Nota del giorno · un'altra esecuzione era in corso</span><span class="chip soon">saltata</span></li>
+              </ul>
+            </div>
+            <p class="mock-note">Orari e tipi di esito presi dalle routine vere; le righe del registro sono un esempio.</p>
+          </div>
+</div>
+    <div class="proj-body">
+      <article class="prose"><section class="rv"><h2>Cosa fa</h2><p>Il lavoro è diviso in aree: studio, posta e calendario, ricerca, progetti audio. Alle 6:30 prepara la nota del giorno, alle 7:30 l'agenda; alle 22:30 riordina le note della giornata e la domenica fa il punto sullo studio.</p><p>Smista la posta e prepara le risposte come bozze. Le note entrano grezze e ogni notte vengono sistemate in pagine collegate tra loro, senza cancellare niente.</p></section><section class="rv"><h2>Le regole che si è dato</h2><p>Nessuna email parte senza la mia conferma. Se una routine è ancora in corso, quella dopo salta il turno invece di sovrapporsi.</p><p>Ogni esecuzione lascia un resoconto con durata, esito e costo, che leggo da una pagina di controllo. La pagina risponde solo sul mio computer: da lì non esce niente.</p></section><section class="rv"><h2>Da dove nasce</h2><p>Posta, calendario, appunti di studio e progetti stavano in posti diversi, e ogni mattina dovevo ricordarmi da dove cominciare. Volevo un unico punto di partenza, che il lavoro di riordino lo facesse da solo.</p></section><section class="rv imparato"><h2>Cosa mi ha insegnato</h2><p>Un'automazione vale qualcosa solo se ci si può fidare, e la fiducia nasce dai registri: sapere sempre cosa ha fatto, quando e con quale esito. È lo stesso principio che applico ai promemoria e ai solleciti automatici che costruisco per altri.</p></section></article>
+      <aside class="tech rv"><h2>Dietro le quinte</h2><dl><div><dt>Strumenti</dt><dd>Claude Code con comandi e skill dedicate, Python senza dipendenze esterne, Bash</dd></div><div><dt>Programmazione</dt><dd>launchd su Mac, systemd su Linux</dd></div><div><dt>Note</dt><dd>Markdown, compatibile con Obsidian</dd></div><div><dt>Codice</dt><dd>privato</dd></div></dl></aside>
+    </div>
+  </div>
+  <div class="wrap" style="padding-bottom:clamp(48px,7vw,88px)">
+    <nav class="pn" aria-label="Altri progetti">
+      <a href="cockpit.html"><span class="label">← Precedente</span><b>cockpit</b></a>
+      <a href="bibiciclo.html"><span class="label">Successivo →</span><b>BibiCiclo</b></a>
+    </nav>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <h2 class="rv">Hai un lavoro che ti porta via troppo tempo? Raccontamelo.</h2>
+        <span class="addr" id="addr-piede">lorenzo.bernardini777@gmail.com</span>
+        <div class="cta" style="margin-top:0">
+          <a class="btn primary" href="mailto:lorenzo.bernardini777@gmail.com">Scrivimi <span class="arr">→</span></a>
+          <button type="button" class="btn" data-copia="lorenzo.bernardini777@gmail.com" aria-controls="addr-piede">Copia indirizzo</button>
+        </div>
+      </div>
+      <nav class="foot-nav" aria-label="Pagine">
+        <a href="../index.html">Home</a>
+        <a href="../servizi.html">Cosa faccio</a>
+        <a href="../progetti.html">Progetti</a>
+        <a href="../chisono.html">Chi sono</a>
+        <a href="../contatti.html">Contatti</a>
+      </nav>
+    </div>
+    <div class="foot-bottom"><span>Lorenzo Bernardini · Bologna · <a href="https://github.com/lberna777" target="_blank" rel="noopener">GitHub</a></span><span>Sito in HTML e CSS · nessun cookie, nessuna statistica</span></div>
+  </div>
+</footer>
+
+<script src="../assets/sito.js"></script>
+<!-- /BODY -->
+</body>
+</html>

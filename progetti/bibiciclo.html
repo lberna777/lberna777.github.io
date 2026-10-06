@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Stima il ciclo e i giorni fertili, porta gli eventi nel Calendario dell'iPhone senza doppioni e salva i dati con backup che segnalano ogni voce scartata. Tutto resta sul telefono.">
+<title>BibiCiclo · Lorenzo Bernardini</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../assets/stile.css">
+<!-- /HEAD -->
+</head>
+<body>
+<!-- BODY -->
+<header class="top">
+  <div class="wrap top-row">
+    <a class="brand" href="../index.html">Lorenzo Bernardini</a>
+    <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav class="nav" id="menu" aria-label="Principale">
+      <a href="../servizi.html">Cosa faccio</a><a href="../progetti.html" aria-current="page">Progetti</a><a href="../chisono.html">Chi sono</a>
+      <a class="nav-cta" href="../contatti.html">Scrivimi</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inizio">
+  <div class="wrap">
+    <div class="proj-head">
+      <div>
+        <nav class="crumbs" aria-label="Percorso"><a href="../progetti.html">Progetti</a><span>/</span><span>BibiCiclo</span></nav>
+        <h1>BibiCiclo</h1>
+        <p class="lede">Stima il ciclo e i giorni fertili, porta gli eventi nel Calendario dell'iPhone senza doppioni e salva i dati con backup che segnalano ogni voce scartata. Tutto resta sul telefono.</p>
+      </div>
+      <div class="info rv"><div><span class="label">Piattaforme</span><span class="v">web app installabile</span></div><div><span class="label">Periodo</span><span class="v">luglio – agosto 2026</span></div><div><span class="label">Stato</span><span class="v">pubblicata, codice aperto</span></div></div>
+    </div>
+    <div class="proj-visual rv"><div class="plate"><div class="phone wipe" style="width:min(300px,100%)"><img src="../img/bibiciclo-schermo.webp" width="460" height="995" alt="Calendario di BibiCiclo, ottobre 2026, con i giorni fertili e il ciclo previsto"></div></div></div>
+    <div class="proj-body">
+      <article class="prose"><section class="rv"><h2>Cosa fa</h2><p>Segni i giorni del ciclo e l'app stima il prossimo e i giorni fertili, dicendo chiaramente che si tratta di stime e non di un metodo contraccettivo. Gli eventi previsti finiscono nel Calendario dell'iPhone senza creare doppioni, e i dati si salvano e si ripristinano con un file.</p></section><section class="rv"><h2>Come è fatta</h2><p>Non c'è un server, non ci sono account, non ci sono statistiche d'uso. L'unica cosa che passa dalla rete è l'app stessa, la prima volta che si apre.</p><p>Il ripristino da un backup dice quante voci ha scartato, invece di perderle in silenzio. E le date restano giuste anche nelle settimane del cambio d'ora.</p></section><section class="rv"><h2>Da dove nasce</h2><p>L'ho scritta per una persona a cui tengo. C'era una sola condizione: le sue informazioni dovevano restare sul suo telefono. Molte app di questo tipo salvano i dati sui propri server; questa no.</p></section><section class="rv imparato"><h2>Cosa mi ha insegnato</h2><p>Le date sono molto più insidiose di quanto sembrino. E la fiducia di chi usa un'app si guadagna nei dettagli: un messaggio onesto vale più di una previsione sicura di sé.</p></section></article>
+      <aside class="tech rv"><h2>Dietro le quinte</h2><dl><div><dt>Linguaggi e librerie</dt><dd>React 19, TypeScript, Zustand, IndexedDB, Tailwind 4, vite-plugin-pwa</dd></div><div><dt>Verifica</dt><dd>141 test automatici sulla logica del ciclo, delle date e dei backup</dd></div><div><dt>Pubblicazione</dt><dd>automatica con GitHub Actions su GitHub Pages</dd></div></dl><div class="links"><a href="https://lberna777.github.io/bibiciclo/" target="_blank" rel="noopener">Apri l'app <span>↗</span></a><a href="https://github.com/lberna777/bibiciclo" target="_blank" rel="noopener">Codice sorgente <span>↗</span></a></div></aside>
+    </div>
+  </div>
+  <div class="wrap" style="padding-bottom:clamp(48px,7vw,88px)">
+    <nav class="pn" aria-label="Altri progetti">
+      <a href="agenticos.html"><span class="label">← Precedente</span><b>AgenticOS</b></a>
+      <a href="unicode.html"><span class="label">Successivo →</span><b>UniCode</b></a>
+    </nav>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <h2 class="rv">Hai un lavoro che ti porta via troppo tempo? Raccontamelo.</h2>
+        <span class="addr" id="addr-piede">lorenzo.bernardini777@gmail.com</span>
+        <div class="cta" style="margin-top:0">
+          <a class="btn primary" href="mailto:lorenzo.bernardini777@gmail.com">Scrivimi <span class="arr">→</span></a>
+          <button type="button" class="btn" data-copia="lorenzo.bernardini777@gmail.com" aria-controls="addr-piede">Copia indirizzo</button>
+        </div>
+      </div>
+      <nav class="foot-nav" aria-label="Pagine">
+        <a href="../index.html">Home</a>
+        <a href="../servizi.html">Cosa faccio</a>
+        <a href="../progetti.html">Progetti</a>
+        <a href="../chisono.html">Chi sono</a>
+        <a href="../contatti.html">Contatti</a>
+      </nav>
+    </div>
+    <div class="foot-bottom"><span>Lorenzo Bernardini · Bologna · <a href="https://github.com/lberna777" target="_blank" rel="noopener">GitHub</a></span><span>Sito in HTML e CSS · nessun cookie, nessuna statistica</span></div>
+  </div>
+</footer>
+
+<script src="../assets/sito.js"></script>
+<!-- /BODY -->
+</body>
+</html>

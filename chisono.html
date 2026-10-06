@@ -3,139 +3,144 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Chi è Lorenzo Bernardini: studente di Ingegneria informatica a Bologna, cresciuto sui campi da basket, appassionato di sistemi e di tecnologia.">
+<meta name="description" content="Chi è Lorenzo Bernardini: studente di Ingegneria informatica a Bologna, cresciuto sui campi da basket, appassionato di sistemi e tecnologia.">
 <title>Chi sono · Lorenzo Bernardini</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="assets/stile.css">
+<!-- /HEAD -->
 </head>
 <body>
+<!-- BODY -->
 <header class="top">
   <div class="wrap top-row">
-    <a class="brand" href="index.html">L. Bernardini <span>· chi sono</span></a>
-    <nav class="nav" aria-label="Sezioni">
-      <a href="index.html#funzioni">Cosa posso fare</a>
-      <a href="index.html#progetti">Progetti</a>
-      <a href="chisono.html" class="on" aria-current="page">Chi sono</a>
-      <a href="index.html#metodo">Metodo</a>
-      <a href="#contatti">Contatti</a>
-      <span class="sector" id="sector" aria-hidden="true">S1/6</span>
+    <a class="brand" href="index.html">Lorenzo Bernardini</a>
+    <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav class="nav" id="menu" aria-label="Principale">
+      <a href="servizi.html">Cosa faccio</a><a href="progetti.html">Progetti</a><a href="chisono.html" aria-current="page">Chi sono</a>
+      <a class="nav-cta" href="contatti.html">Scrivimi</a>
     </nav>
   </div>
-  <div class="sectors" aria-hidden="true"></div>
 </header>
 
 <main id="inizio">
   <section class="wrap bio-hero">
     <div>
       <div class="eyebrow label"><span>Chi sono</span><span>Bologna</span></div>
-      <h1 id="titolo">Costruisco gli strumenti che mi servono. <em style="font-style:normal;color:var(--accent)">Adesso</em> quelli che servono a voi.</h1>
+      <h1 id="titolo">Piacere, sono <em style="font-style:normal;color:var(--accent)">Lorenzo</em>.</h1>
+      <p class="lede">Studio Ingegneria informatica a Bologna. Sono cresciuto tra palestre e campi da basket, e ho sempre avuto il vizio di aprire le cose per capire come funzionano. Da qualche anno quelle cose sono soprattutto programmi.</p>
     </div>
     <div class="scheda rv">
-      <div class="head"><span class="label">Scheda</span></div>
-      <div><span class="label">Nome</span><span class="v">Lorenzo Bernardini</span></div>
+      <div class="head"><span class="label">In breve</span></div>
       <div><span class="label">Città</span><span class="v">Bologna</span></div>
       <div><span class="label">Studi</span><span class="v">Ingegneria informatica, Università di Bologna</span></div>
       <div><span class="label">Linguaggi</span><span class="v">Swift · TypeScript · C++ · Python</span></div>
-      <div><span class="label">Email</span><span class="v"><a href="#contatti">lorenzo.bernardini777@gmail.com</a></span></div>
+      <div><span class="label">Email</span><span class="v"><a href="contatti.html">lorenzo.bernardini777@gmail.com</a></span></div>
     </div>
   </section>
 
   <div class="wrap chapters">
-    <section class="chapter" id="campo" data-sector>
+    <section class="chapter">
       <div class="rv">
         <span class="label">Da dove vengo</span>
         <h2>Dal campo da basket.</h2>
+        <figure class="foto r43"><img src="img/foto/campo.jpg" alt="Lorenzo su un campo da basket" onerror="this.closest('figure').remove()"></figure>
       </div>
       <div class="body rv">
-        <p>Sono cresciuto a Bologna, e per anni la mia settimana l'hanno scandita gli allenamenti: ho giocato a basket nella Fortitudo fino all'Under 19 Silver.</p>
-        <p>Di una società sportiva conosco quello che vede chi ci gioca: le iscrizioni a inizio stagione, i certificati medici da rinnovare, gli avvisi che arrivano nelle chat di squadra, e le persone che in segreteria tengono insieme tutto con fogli e telefonate.</p>
-        <p class="pull">Quando costruisco un gestionale per un'associazione, so per chi lo sto costruendo.</p>
+        <p>Per anni la mia settimana l'hanno scandita gli allenamenti. Ho giocato a basket nella Fortitudo fino all'Under 19 Silver, e lì ho imparato più cose sul lavoro di squadra che in qualsiasi aula.</p>
+        <p>Di una società sportiva conosco quello che vede chi ci gioca: le iscrizioni a inizio stagione, i certificati medici da rinnovare, gli avvisi che rimbalzano nelle chat di squadra, e le persone che in segreteria tengono insieme tutto con fogli e telefonate.</p>
+        <p class="pull">Quando costruisco qualcosa per un'associazione, so per chi lo sto facendo.</p>
       </div>
     </section>
 
-    <section class="chapter" id="studio" data-sector>
+    <section class="chapter">
       <div class="rv">
         <span class="label">Come studio</span>
         <h2>All'università, organizzandomi da solo.</h2>
+        <figure class="foto r43"><img src="img/foto/al-computer.jpg" alt="Lorenzo al computer" onerror="this.closest('figure').remove()"></figure>
       </div>
       <div class="body rv">
-        <p>Studio Ingegneria informatica all'Alma Mater. Da quest'anno non ho più lezioni da seguire: mi restano gli esami, che preparo in autonomia.</p>
-        <p>Per non perdere il filo ho costruito i miei strumenti. UniCode trasforma le slide dei corsi in lezioni ed esercizi; cockpit tiene il piano della laurea, le scadenze dei ripassi e l'archivio dei materiali. Organizzare me stesso è stato il mio primo gestionale.</p>
-        <p>L'esame più vicino a questo lavoro è Diritto dell'Informatica, superato con 30: contratti per lo sviluppo del software, tutela del software, protezione dei dati personali. Sono le regole che servono quando si trattano i dati di un cliente.</p>
-        <p class="muted">Ho superato anche il Laboratorio di Sicurezza Informatica, tra configurazione di firewall, analisi del traffico di rete ed esercitazioni di attacco e difesa.</p>
+        <p>Da quest'anno non ho più lezioni da seguire: mi restano gli esami, che preparo per conto mio. Per non perdere il filo mi sono costruito gli strumenti che mi servivano. UniCode trasforma le slide dei corsi in lezioni ed esercizi; cockpit tiene il piano della laurea, i ripassi e l'archivio dei materiali.</p>
+        <p>Organizzare me stesso è stato, di fatto, il mio primo gestionale.</p>
+        <p>L'esame più vicino a questo lavoro è Diritto dell'Informatica, che ho superato con 30: contratti per lo sviluppo del software, tutela del software, protezione dei dati personali. Ho superato anche il Laboratorio di Sicurezza Informatica, tra firewall, analisi del traffico di rete ed esercitazioni di attacco e difesa.</p>
       </div>
     </section>
 
-    <section class="chapter" id="fuori" data-sector>
+    <section class="chapter">
       <div class="rv">
         <span class="label">Fuori dal codice</span>
         <h2>Le passioni che finiscono nel codice.</h2>
       </div>
       <div class="body rv">
         <div class="interests">
-          <div><span class="label">Sistemi</span><h3>Linux, costruito da zero.</h3><p>Il mio portatile l'ho configurato su Debian partendo da zero, dal desktop agli strumenti per l'università. Mi piace sapere cosa gira sulle mie macchine e perché.</p></div>
-          <div><span class="label">Hardware</span><h3>Aprire per capire.</h3><p>Quando qualcosa si rompe, prima di sostituirlo lo apro: l'elettronica mi incuriosisce quanto il software.</p></div>
-          <div><span class="label">Suono</span><h3>L'audio in tempo reale.</h3><p>Mi interessa come si elabora il suono mentre suona: da questa curiosità sono nati i miei plugin.</p></div>
-          <div><span class="label">Motori</span><h3>Auto e guida.</h3><p>Mi piace guidare e capire i numeri che stanno dietro alla guida: da qui è nato CarGuy.</p></div>
+          <div><span class="label">Sistemi</span><h3>Linux, costruito da zero.</h3><p>Il mio portatile l'ho configurato su Debian partendo da zero, dal desktop agli strumenti per l'università. Mi piace sapere cosa gira sulle mie macchine, e perché.</p></div>
+          <div><span class="label">Hardware</span><h3>Aprire per capire.</h3><p>Quando qualcosa si rompe, prima di buttarlo lo apro. L'elettronica mi incuriosisce quanto il software.</p></div>
+          <div><span class="label">Suono</span><h3>L'audio in tempo reale.</h3><p>Mi interessa come si elabora il suono mentre suona. Da questa curiosità sono nati i miei plugin.</p></div>
+          <div><span class="label">Motori</span><h3>Auto e guida.</h3><p>Mi piace guidare e capire i numeri che ci stanno dietro. È da qui che è nato CarGuy.</p></div>
         </div>
+        <figure class="foto r32"><img src="img/foto/bologna.jpg" alt="Lorenzo a Bologna" onerror="this.closest('figure').remove()"></figure>
       </div>
     </section>
 
-    <section class="chapter" id="anno" data-sector>
+    <section class="chapter">
       <div class="rv">
         <span class="label">2026</span>
         <h2>Un anno di progetti.</h2>
-        <p style="color:var(--ink-2);margin-top:14px;max-width:26em">In ordine, mese per mese: ogni progetto ha insegnato qualcosa a quello dopo.</p>
+        <p style="color:var(--ink-2);margin-top:14px;max-width:26em">Mese per mese. Ognuno ha insegnato qualcosa a quello dopo.</p>
       </div>
       <div class="body">
         <div class="timeline-wrap"><span class="fill" id="tl-fill" aria-hidden="true"></span>
         <ol class="timeline" id="timeline">
-          <li class="rv"><time>febbraio</time><div><b>Appunti dei corsi su GitHub</b><p>Diritto dell'Informatica e Laboratorio di Sicurezza, un repository per corso.</p></div></li>
-          <li class="rv"><time>maggio</time><div><b>UniCode e NEMO</b><p>Il sistema di studio e il primo plugin audio, un compressore per il mix.</p></div></li>
-          <li class="rv"><time>giugno</time><div><b>Diritto Quiz T, poi l'esame</b><p>Un'app di ripasso a quiz per Diritto dell'Informatica, e il 30.</p></div></li>
-          <li class="rv"><time>luglio</time><div><b>FreakFM e AcidMoog</b><p>Due sintetizzatori: uno FM con sequencer interno, uno per i bassi.</p></div></li>
+          <li class="rv"><time>febbraio</time><div><b>Gli appunti su GitHub</b><p>Un repository per ogni corso, a partire da Diritto e Sicurezza.</p></div></li>
+          <li class="rv"><time>maggio</time><div><b>UniCode e NEMO</b><p>Il sistema di studio e il primo plugin audio.</p></div></li>
+          <li class="rv"><time>giugno</time><div><b>Diritto Quiz T, poi l'esame</b><p>Un'app di ripasso a quiz, e un 30 a Diritto dell'Informatica.</p></div></li>
+          <li class="rv"><time>luglio</time><div><b>FreakFM e AcidMoog</b><p>Due sintetizzatori, scritti da zero.</p></div></li>
           <li class="rv"><time>agosto</time><div><b>BibiCiclo e Plugin-Creator</b><p>Un'app che non manda dati a nessuno, e le regole imparate dagli errori di NEMO.</p></div></li>
-          <li class="rv"><time>settembre</time><div><b>AgenticOS, cockpit e CarGuy</b><p>Il mio assistente personale, il gestionale della laurea e un'app per iPhone, Watch e web.</p></div></li>
-          <li class="rv"><time>ottobre</time><div><b>I primi clienti</b><p>Uno studio su cinquanta attività di Bologna con un problema gestito a mano, e i primi contatti.</p></div></li>
+          <li class="rv"><time>settembre</time><div><b>AgenticOS, cockpit e CarGuy</b><p>L'assistente personale, il gestionale della laurea e un'app per iPhone, Watch e web.</p></div></li>
+          <li class="rv"><time>ottobre</time><div><b>I primi clienti</b><p>Uno studio su cinquanta attività di Bologna e i primi incontri.</p></div></li>
         </ol></div>
       </div>
     </section>
 
-    <section class="chapter" id="cerco" data-sector>
+    <section class="chapter">
       <div class="rv">
         <span class="label">Adesso</span>
         <h2>Cosa cerco.</h2>
       </div>
       <div class="body rv">
-        <p>Voglio costruire un portfolio di progetti reali, per attività vere, nella mia città. Non vendo siti: cerco problemi che costano tempo a chi li gestisce e propongo una piccola applicazione che li risolve.</p>
-        <p>I primi progetti hanno condizioni d'ingresso agevolate, in cambio della possibilità di raccontarli qui.</p>
-        <p class="muted">Rispondo per email e mi trovate a Bologna per un incontro di persona.</p>
-        <div class="cta" style="margin-top:4px"><a class="btn primary" href="#contatti">Scrivimi <span class="arr">→</span></a><a class="btn" href="index.html#progetti">Guarda i progetti</a></div>
+        <p>Voglio lavorare su progetti veri, per attività vere, nella mia città. Non vendo siti: cerco i problemi che fanno perdere tempo a chi li gestisce e propongo il piccolo software che li risolve.</p>
+        <p>Per i primi progetti le condizioni sono agevolate, in cambio della possibilità di raccontarli qui.</p>
+        <div class="cta" style="margin-top:4px"><a class="btn primary" href="contatti.html">Scrivimi <span class="arr">→</span></a><a class="btn" href="progetti.html">Guarda i progetti</a></div>
       </div>
     </section>
   </div>
 </main>
 
-<footer class="contact" id="contatti" data-sector>
+<footer class="site-foot">
   <div class="wrap">
-    <span class="label" style="color:inherit;opacity:.6">Contatti</span>
-    <h2 class="rv">Parliamo del vostro problema, non del mio curriculum.</h2>
-    <p class="rv">Il primo incontro è breve e serve ad ascoltare. Se il problema si può risolvere con una piccola applicazione, vi propongo come; se no, ve lo dico.</p>
-    <div class="mailbox rv">
-      <span class="label" style="color:inherit;opacity:.6">Email</span>
-      <span class="addr" id="addr">lorenzo.bernardini777@gmail.com</span>
-      <div class="cta">
-        <a class="btn primary" href="mailto:lorenzo.bernardini777@gmail.com">Scrivimi <span class="arr">→</span></a>
-        <button type="button" class="btn" data-copia="lorenzo.bernardini777@gmail.com" aria-controls="addr">Copia indirizzo</button>
-        <a class="btn" href="https://github.com/lberna777" target="_blank" rel="noopener">GitHub ↗</a>
+    <div class="foot-top">
+      <div>
+        <h2 class="rv">Hai un lavoro che ti porta via troppo tempo? Raccontamelo.</h2>
+        <span class="addr" id="addr-piede">lorenzo.bernardini777@gmail.com</span>
+        <div class="cta" style="margin-top:0">
+          <a class="btn primary" href="mailto:lorenzo.bernardini777@gmail.com">Scrivimi <span class="arr">→</span></a>
+          <button type="button" class="btn" data-copia="lorenzo.bernardini777@gmail.com" aria-controls="addr-piede">Copia indirizzo</button>
+        </div>
       </div>
+      <nav class="foot-nav" aria-label="Pagine">
+        <a href="index.html">Home</a>
+        <a href="servizi.html">Cosa faccio</a>
+        <a href="progetti.html">Progetti</a>
+        <a href="chisono.html">Chi sono</a>
+        <a href="contatti.html">Contatti</a>
+      </nav>
     </div>
-    <div class="foot"><span>Lorenzo Bernardini · Bologna</span><span><a href="index.html" style="color:inherit">Torna al fascicolo progetti</a></span></div>
+    <div class="foot-bottom"><span>Lorenzo Bernardini · Bologna · <a href="https://github.com/lberna777" target="_blank" rel="noopener">GitHub</a></span><span>Sito in HTML e CSS · nessun cookie, nessuna statistica</span></div>
   </div>
 </footer>
 
 <script src="assets/sito.js"></script>
+<!-- /BODY -->
 </body>
 </html>

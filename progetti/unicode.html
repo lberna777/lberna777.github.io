@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Undici comandi per lezioni, appunti, ripassi programmati e simulazioni d'esame. Regole precise obbligano l'assistente a partire dalla fonte, e un controllo la rilegge per trovare errori e lacune.">
+<title>UniCode · Lorenzo Bernardini</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../assets/stile.css">
+<!-- /HEAD -->
+</head>
+<body>
+<!-- BODY -->
+<header class="top">
+  <div class="wrap top-row">
+    <a class="brand" href="../index.html">Lorenzo Bernardini</a>
+    <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav class="nav" id="menu" aria-label="Principale">
+      <a href="../servizi.html">Cosa faccio</a><a href="../progetti.html" aria-current="page">Progetti</a><a href="../chisono.html">Chi sono</a>
+      <a class="nav-cta" href="../contatti.html">Scrivimi</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inizio">
+  <div class="wrap">
+    <div class="proj-head">
+      <div>
+        <nav class="crumbs" aria-label="Percorso"><a href="../progetti.html">Progetti</a><span>/</span><span>UniCode</span></nav>
+        <h1>UniCode</h1>
+        <p class="lede">Undici comandi per lezioni, appunti, ripassi programmati e simulazioni d'esame. Regole precise obbligano l'assistente a partire dalla fonte, e un controllo la rilegge per trovare errori e lacune.</p>
+      </div>
+      <div class="info rv"><div><span class="label">Strumenti</span><span class="v">Claude Code, Markdown, git</span></div><div><span class="label">Periodo</span><span class="v">aprile 2026 – oggi</span></div><div><span class="label">Stato</span><span class="v">in uso, codice aperto</span></div></div>
+    </div>
+    <div class="proj-visual rv"><div class="mock">
+            <div class="mock-bar"><span class="label">Il ciclo di ogni modulo</span><span class="label">chi fa cosa</span></div>
+            <ol class="ciclo">
+              <li><b>Lezione</b><span>L'assistente legge le slide originali e scrive la lezione con gli esercizi.</span><i class="who ai">assistente</i></li>
+              <li><b>Pratica</b><span>Svolgo gli esercizi su una macchina virtuale o rispondo a voce.</span><i class="who me">io</i></li>
+              <li><b>Appunti grezzi</b><span>Scrivo i miei appunti, con errori e domande aperte.</span><i class="who me">io</i></li>
+              <li><b>Appunti definitivi</b><span>Risponde a ogni domanda, corregge gli errori, colma le lacune.</span><i class="who ai">assistente</i></li>
+              <li><b>Chiusura</b><span>Registro della sessione, prossimo ripasso, salvataggio su git.</span><i class="who auto">automatico</i></li>
+            </ol>
+            <p class="mock-note">Ogni modulo passa da questi cinque passaggi, in quest'ordine. Il comando di verifica può controllarne i materiali in qualsiasi momento.</p>
+          </div>
+</div>
+    <div class="proj-body">
+      <article class="prose"><section class="rv"><h2>Come funziona</h2><p>Ogni argomento segue lo stesso ciclo. L'assistente legge le slide originali del corso e prepara la lezione con gli esercizi. Io li svolgo e scrivo i miei appunti, errori e dubbi compresi. Poi l'assistente risponde a ogni domanda e corregge quello che ho sbagliato. Alla fine la sessione viene registrata e il ripasso programmato.</p><p>Ci sono comandi anche per le simulazioni d'esame, per l'analisi delle lacune e per il piano della giornata. L'ho usato per preparare Diritto dell'Informatica e il Laboratorio di Sicurezza Informatica.</p></section><section class="rv"><h2>Le regole</h2><p>Un file di istruzioni spiega all'assistente chi sono, come imparo e quali regole non può saltare. La prima è che non si scrive niente senza aver letto la fonte originale.</p><p>Un comando apposito rilegge il PDF del corso e segnala lacune, termini imprecisi e incoerenze nei materiali generati. Mi fido dei materiali perché li posso controllare.</p></section><section class="rv"><h2>Da dove nasce</h2><p>Rileggere le slide prima dell'esame, almeno per me, non funziona. Volevo un metodo che mi obbligasse a fare: esercizi, appunti scritti di mio pugno, domande a voce. E volevo usare l'intelligenza artificiale senza che studiasse al posto mio.</p></section><section class="rv imparato"><h2>Cosa mi ha insegnato</h2><p>Questi strumenti rendono quanto le istruzioni che ricevono. Saperli guidare, con regole chiare e controlli contro le fonti, è una competenza a sé, e la porto in ogni progetto.</p></section></article>
+      <aside class="tech rv"><h2>Dietro le quinte</h2><dl><div><dt>Strumenti</dt><dd>Claude Code con comandi, hook e istruzioni di progetto; Markdown; pandoc e XeLaTeX per i PDF</dd></div><div><dt>Memoria</dt><dd>stato degli argomenti, registro delle sessioni, errori ricorrenti, calendario dei ripassi</dd></div><div><dt>Salvataggio</dt><dd>git, automatico a ogni chiusura di sessione</dd></div></dl><div class="links"><a href="https://github.com/lberna777/UniCode" target="_blank" rel="noopener">Codice sorgente <span>↗</span></a></div></aside>
+    </div>
+  </div>
+  <div class="wrap" style="padding-bottom:clamp(48px,7vw,88px)">
+    <nav class="pn" aria-label="Altri progetti">
+      <a href="bibiciclo.html"><span class="label">← Precedente</span><b>BibiCiclo</b></a>
+      <a href="quiz.html"><span class="label">Successivo →</span><b>Diritto Quiz T</b></a>
+    </nav>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <h2 class="rv">Hai un lavoro che ti porta via troppo tempo? Raccontamelo.</h2>
+        <span class="addr" id="addr-piede">lorenzo.bernardini777@gmail.com</span>
+        <div class="cta" style="margin-top:0">
+          <a class="btn primary" href="mailto:lorenzo.bernardini777@gmail.com">Scrivimi <span class="arr">→</span></a>
+          <button type="button" class="btn" data-copia="lorenzo.bernardini777@gmail.com" aria-controls="addr-piede">Copia indirizzo</button>
+        </div>
+      </div>
+      <nav class="foot-nav" aria-label="Pagine">
+        <a href="../index.html">Home</a>
+        <a href="../servizi.html">Cosa faccio</a>
+        <a href="../progetti.html">Progetti</a>
+        <a href="../chisono.html">Chi sono</a>
+        <a href="../contatti.html">Contatti</a>
+      </nav>
+    </div>
+    <div class="foot-bottom"><span>Lorenzo Bernardini · Bologna · <a href="https://github.com/lberna777" target="_blank" rel="noopener">GitHub</a></span><span>Sito in HTML e CSS · nessun cookie, nessuna statistica</span></div>
+  </div>
+</footer>
+
+<script src="../assets/sito.js"></script>
+<!-- /BODY -->
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Simula l'esame con timer e voto, ripropone gli errori con il metodo Leitner e accetta domande nuove solo dopo un controllo sulla fonte.">
+<title>Diritto Quiz T · Lorenzo Bernardini</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../assets/stile.css">
+<!-- /HEAD -->
+</head>
+<body>
+<!-- BODY -->
+<header class="top">
+  <div class="wrap top-row">
+    <a class="brand" href="../index.html">Lorenzo Bernardini</a>
+    <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav class="nav" id="menu" aria-label="Principale">
+      <a href="../servizi.html">Cosa faccio</a><a href="../progetti.html" aria-current="page">Progetti</a><a href="../chisono.html">Chi sono</a>
+      <a class="nav-cta" href="../contatti.html">Scrivimi</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inizio">
+  <div class="wrap">
+    <div class="proj-head">
+      <div>
+        <nav class="crumbs" aria-label="Percorso"><a href="../progetti.html">Progetti</a><span>/</span><span>Diritto Quiz T</span></nav>
+        <h1>Diritto Quiz T</h1>
+        <p class="lede">Simula l'esame con timer e voto, ripropone gli errori con il metodo Leitner e accetta domande nuove solo dopo un controllo sulla fonte.</p>
+      </div>
+      <div class="info rv"><div><span class="label">Piattaforme</span><span class="v">app desktop per Linux</span></div><div><span class="label">Periodo</span><span class="v">giugno 2026</span></div><div><span class="label">Stato</span><span class="v">versione 0.1</span></div></div>
+    </div>
+    <div class="proj-visual rv"><div style="max-width:560px;margin-inline:auto"><div class="quiz" id="quiz">
+            <span class="label">Prova una domanda · modulo D8, Privacy e GDPR</span>
+            <p class="quiz-q">Un dato pseudonimizzato:</p>
+            <div class="quiz-o">
+              <button type="button" id="q-a" data-ok="1"><span class="k">A</span><span>Resta un dato personale soggetto al GDPR.</span></button>
+              <button type="button" id="q-b"><span class="k">B</span><span>È fuori dall'ambito del GDPR.</span></button>
+              <button type="button" id="q-c"><span class="k">C</span><span>È equivalente a un dato anonimo.</span></button>
+            </div>
+            <p class="quiz-e" id="quiz-e" aria-live="polite">Scegli una risposta: la domanda si sposta tra le scatole del ripasso.</p>
+            <div class="leitner" aria-hidden="true">
+              <div>1<b>subito</b></div><div>2<b>oggi</b></div><div>3<b>+1 g</b></div><div>4<b>+3 g</b></div><div>5<b>+7 g</b></div>
+              <span class="card" id="card"></span>
+            </div>
+            <button type="button" class="quiz-reset" id="quiz-reset" hidden>Riprova</button>
+          </div></div></div>
+    <div class="proj-body">
+      <article class="prose"><section class="rv"><h2>Cosa fa</h2><p>Simula l'esame con ventidue domande e il timer, oppure ti fa ripassare argomento per argomento. Le domande sbagliate tornano a intervalli sempre più lunghi finché non le sai: subito, poi dopo un giorno, tre, sette, sedici.</p><p>Nell'archivio ci sono 362 domande su tredici argomenti, dal diritto d'autore al GDPR, ognuna con la spiegazione della risposta giusta.</p></section><section class="rv"><h2>Come è fatta</h2><p>Le domande nuove si possono generare in modo assistito, ma prima di entrare nell'archivio vengono confrontate con la fonte e approvate a mano. Il nucleo non dipende dalla materia: domani può ospitare un altro esame.</p></section><section class="rv"><h2>Da dove nasce</h2><p>L'esame di Diritto dell'Informatica è a risposta multipla. Il modo migliore per prepararlo è allenarsi su tante domande e tornare su quelle sbagliate, e per quel corso uno strumento così non c'era.</p></section><section class="rv imparato"><h2>Cosa mi ha insegnato</h2><p>Prima l'ho usata, poi all'esame ho preso 30. Mi ha confermato che uno strumento costruito attorno a un problema preciso batte quasi sempre uno generico.</p></section></article>
+      <aside class="tech rv"><h2>Dietro le quinte</h2><dl><div><dt>Linguaggi e librerie</dt><dd>Tauri 2, Rust, React 19, TypeScript, SQLite, Recharts</dd></div><div><dt>Verifica</dt><dd>test sulla logica di punteggio e di ripasso</dd></div><div><dt>Distribuzione</dt><dd>pacchetti .deb e AppImage</dd></div></dl><div class="links"><a href="https://github.com/lberna777/diritto-quiz-app" target="_blank" rel="noopener">Codice sorgente <span>↗</span></a></div></aside>
+    </div>
+  </div>
+  <div class="wrap" style="padding-bottom:clamp(48px,7vw,88px)">
+    <nav class="pn" aria-label="Altri progetti">
+      <a href="unicode.html"><span class="label">← Precedente</span><b>UniCode</b></a>
+      <a href="audio.html"><span class="label">Successivo →</span><b>Plugin audio</b></a>
+    </nav>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <h2 class="rv">Hai un lavoro che ti porta via troppo tempo? Raccontamelo.</h2>
+        <span class="addr" id="addr-piede">lorenzo.bernardini777@gmail.com</span>
+        <div class="cta" style="margin-top:0">
+          <a class="btn primary" href="mailto:lorenzo.bernardini777@gmail.com">Scrivimi <span class="arr">→</span></a>
+          <button type="button" class="btn" data-copia="lorenzo.bernardini777@gmail.com" aria-controls="addr-piede">Copia indirizzo</button>
+        </div>
+      </div>
+      <nav class="foot-nav" aria-label="Pagine">
+        <a href="../index.html">Home</a>
+        <a href="../servizi.html">Cosa faccio</a>
+        <a href="../progetti.html">Progetti</a>
+        <a href="../chisono.html">Chi sono</a>
+        <a href="../contatti.html">Contatti</a>
+      </nav>
+    </div>
+    <div class="foot-bottom"><span>Lorenzo Bernardini · Bologna · <a href="https://github.com/lberna777" target="_blank" rel="noopener">GitHub</a></span><span>Sito in HTML e CSS · nessun cookie, nessuna statistica</span></div>
+  </div>
+</footer>
+
+<script src="../assets/sito.js"></script>
+<!-- /BODY -->
+</body>
+</html>

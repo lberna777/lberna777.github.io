@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Scadenze, archivi, promemoria e calendari: piccoli software su misura per attività, studi e associazioni.">
+<title>Cosa faccio · Lorenzo Bernardini</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/stile.css">
+<!-- /HEAD -->
+</head>
+<body>
+<!-- BODY -->
+<header class="top">
+  <div class="wrap top-row">
+    <a class="brand" href="index.html">Lorenzo Bernardini</a>
+    <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav class="nav" id="menu" aria-label="Principale">
+      <a href="servizi.html" aria-current="page">Cosa faccio</a><a href="progetti.html">Progetti</a><a href="chisono.html">Chi sono</a>
+      <a class="nav-cta" href="contatti.html">Scrivimi</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inizio">
+  <div class="wrap page-head">
+    <span class="label">Cosa faccio</span>
+    <h1>Le cose ripetitive le fa il programma. Tu ti occupi del resto.</h1>
+    <p class="lede">In ogni attività c'è un pezzo di lavoro che si ripete identico, settimana dopo settimana. È lì che un piccolo software fa la differenza. Queste sono le cose che so già costruire, perché prima le ho costruite per me.</p>
+  </div>
+
+  <section class="wrap" style="padding-bottom:clamp(56px,8vw,104px)">
+    <div class="explorer rv">
+      <div class="ex-tabs" role="tablist" aria-label="Cosa posso costruire"><button type="button" role="tab" id="t-scad" aria-controls="p-scad" aria-selected="true"><b>Scadenze con preavviso</b><span>garage di CarGuy · cockpit</span></button><button type="button" role="tab" id="t-oggi" aria-controls="p-oggi" aria-selected="false" tabindex="-1"><b>La pagina del giorno</b><span>cockpit · Oggi</span></button><button type="button" role="tab" id="t-cal" aria-controls="p-cal" aria-selected="false" tabindex="-1"><b>Calendari con vincoli</b><span>cockpit · Laurea</span></button><button type="button" role="tab" id="t-arch" aria-controls="p-arch" aria-selected="false" tabindex="-1"><b>Un archivio ordinato</b><span>cockpit · Materiali</span></button><button type="button" role="tab" id="t-auto" aria-controls="p-auto" aria-selected="false" tabindex="-1"><b>Promemoria da approvare</b><span>AgenticOS</span></button><button type="button" role="tab" id="t-priv" aria-controls="p-priv" aria-selected="false" tabindex="-1"><b>Dati al sicuro</b><span>BibiCiclo · CarGuy</span></button></div>
+      <div class="ex-panel" role="tabpanel" id="p-scad" aria-labelledby="t-scad">
+        <div class="ex-text">
+          <h3>Nessuna scadenza ti coglie di sorpresa.</h3>
+          <div class="pair"><span class="label">Dove l'ho già fatto</span><p>Nel garage di CarGuy ogni auto ha le sue scadenze, a data o a chilometri, ognuna con il suo preavviso. Quando segno un tagliando come fatto, il prossimo si pianifica da solo.</p></div>
+          <div class="pair voi"><span class="label">Cosa può fare per te</span><p>Rinnovi, certificati, abbonamenti, manutenzioni. Ricevi un avviso qualche giorno prima e, se vuoi, lo riceve anche il tuo cliente.</p></div>
+        </div>
+        <div class="mock">
+          <div class="mock-bar"><span class="label">Scadenze · settimana 41</span><span class="label">esempio</span></div>
+          <div class="mock-body">
+            <div class="m-row"><span>Certificati da rinnovare</span><small>3 persone</small><span class="chip late">scaduti</span></div>
+            <div class="m-row"><span>Rinnovo abbonamento</span><small>5 clienti</small><span class="chip soon">tra 4 giorni</span></div>
+            <div class="m-row"><span>Manutenzione della caldaia</span><small>sede</small><span class="chip soon">tra 9 giorni</span></div>
+            <div class="m-row"><span>Assicurazione del furgone</span><small>ricorrente, ogni 12 mesi</small><span class="chip ok">tra 41 giorni</span></div>
+          </div>
+          <p class="mock-note">Dati di esempio. Preavviso, ricorrenza e scadenza per data o per uso funzionano come nel garage di CarGuy.</p>
+        </div>
+
+      </div><div class="ex-panel" role="tabpanel" id="p-oggi" aria-labelledby="t-oggi" hidden>
+        <div class="ex-text">
+          <h3>Apri una pagina e sai cosa fare oggi.</h3>
+          <div class="pair"><span class="label">Dove l'ho già fatto</span><p>Ogni mattina cockpit mi dice quali ripassi sono in ritardo, cosa scade e quanti giorni mancano agli esami. Sotto c'è il diario di quello che ho già fatto.</p></div>
+          <div class="pair voi"><span class="label">Cosa può fare per te</span><p>Pagamenti da sollecitare, appuntamenti della settimana, pratiche in sospeso: tutto in una pagina, invece che sparso tra fogli di calcolo e chat.</p></div>
+        </div>
+        <div class="mock">
+          <div class="mock-bar"><span class="label">Oggi · martedì</span><span class="label">esempio</span></div>
+          <div class="mock-body">
+            <div class="m-tiles">
+              <div class="late"><span class="label">In ritardo</span><b>3</b><small>pagamenti da sollecitare</small></div>
+              <div class="soon"><span class="label">In scadenza</span><b>7</b><small>nei prossimi 7 giorni</small></div>
+              <div><span class="label">Prossimo evento</span><b>12 g</b><small>alla chiusura del trimestre</small></div>
+            </div>
+            <span class="label">La giornata</span>
+            <ul class="m-log">
+              <li><span>09:10</span><span>confermate 4 prenotazioni</span></li>
+              <li><span>11:30</span><span>approvato il sollecito di pagamento a 2 clienti</span></li>
+              <li><span>17:45</span><span>spostato l'appuntamento del giovedì alle 15:00</span></li>
+            </ul>
+          </div>
+          <p class="mock-note">Dati di esempio, nella stessa struttura della pagina «Oggi» di cockpit.</p>
+        </div>
+
+      </div><div class="ex-panel" role="tabpanel" id="p-cal" aria-labelledby="t-cal" hidden>
+        <div class="ex-text">
+          <h3>Un calendario che sa cosa non si può spostare.</h3>
+          <div class="pair"><span class="label">Dove l'ho già fatto</span><p>Il piano della mia laurea mette dodici esami in tre sessioni. Le propedeuticità sono disegnate come catene, così se uno slitta vedo subito cosa si porta dietro.</p></div>
+          <div class="pair voi"><span class="label">Cosa può fare per te</span><p>Turni, sale, attrezzature condivise, corsi a livelli. Il calendario ti avvisa del conflitto prima che diventi un problema.</p></div>
+        </div>
+        <div class="mock">
+          <div class="mock-bar"><span class="label">cockpit · catene di dipendenza</span><span class="label">dati reali</span></div>
+          <img class="m-shot" src="img/cockpit-catene.webp" width="980" height="430" alt="Catene di dipendenza tra esami: tre colonne S1, S2, S3 con i codici degli esami collegati da linee">
+          <p class="mock-note" style="padding-top:10px">Le mie tre sessioni d'esame: ogni linea è una propedeuticità.</p>
+        </div>
+
+      </div><div class="ex-panel" role="tabpanel" id="p-arch" aria-labelledby="t-arch" hidden>
+        <div class="ex-text">
+          <h3>Il documento giusto in due secondi.</h3>
+          <div class="pair"><span class="label">Dove l'ho già fatto</span><p>In cockpit tengo più di cinquecento file tra lezioni, appunti ed esami. Li ritrovo per tipo, per corso o scrivendo due lettere.</p></div>
+          <div class="pair voi"><span class="label">Cosa può fare per te</span><p>Contratti, preventivi, moduli, verbali. Ogni cosa ha il suo posto e la trovi anche dal telefono.</p></div>
+        </div>
+        <div class="mock">
+          <div class="mock-bar"><span class="label">Archivio</span><span class="label">esempio · provalo</span></div>
+          <div class="mock-body">
+            <label class="m-search" for="cerca-doc"><span aria-hidden="true">⌕</span><input id="cerca-doc" type="search" placeholder="Cerca un documento (prova: certificato)" autocomplete="off"><kbd>Ctrl K</kbd></label>
+            <ul class="m-docs" id="elenco-doc">
+              <li><span>Modulo d'iscrizione 2026-27</span><span>modulo</span></li>
+              <li><span>Contratto di fornitura 2026</span><span>contratto</span></li>
+              <li><span>Certificati · elenco delle scadenze</span><span>certificato</span></li>
+              <li><span>Preventivo n. 42 · ristrutturazione</span><span>preventivo</span></li>
+              <li><span>Listino prezzi in vigore</span><span>listino</span></li>
+              <li><span>Verbale dell'assemblea dei soci</span><span>verbale</span></li>
+              <li><span>Certificato di conformità dell'impianto</span><span>certificato</span></li>
+            </ul>
+            <p class="mock-note" id="nessun-doc" hidden style="padding:0">Nessun documento trovato.</p>
+          </div>
+        </div>
+
+      </div><div class="ex-panel" role="tabpanel" id="p-auto" aria-labelledby="t-auto" hidden>
+        <div class="ex-text">
+          <h3>Il sistema prepara, tu approvi.</h3>
+          <div class="pair"><span class="label">Dove l'ho già fatto</span><p>Il mio assistente personale smista la posta e scrive le risposte come bozze. Niente parte senza il mio via.</p></div>
+          <div class="pair voi"><span class="label">Cosa può fare per te</span><p>Solleciti, conferme, avvisi di rinnovo: pronti da inviare con un clic, senza riscriverli ogni volta da capo.</p></div>
+        </div>
+        <div class="mock">
+          <div class="mock-bar"><span class="label">Posta in uscita</span><span class="label">esempio · provalo</span></div>
+          <div class="mock-body">
+            <div class="m-mail" id="bozza">
+              <span class="stato" id="bozza-stato" aria-live="polite">Bozza · in attesa della tua approvazione</span>
+              <div class="hdr"><span>A: un cliente</span><span>Oggetto: rinnovo in scadenza</span></div>
+              <p>Buongiorno, il suo abbonamento scade il 14 ottobre. Per rinnovarlo può rispondere a questa email o passare da noi negli orari di apertura. Grazie!</p>
+              <div class="m-actions"><button type="button" id="approva">Approva</button></div>
+            </div>
+          </div>
+          <p class="mock-note">Esempio: nessuna email viene inviata da questa pagina.</p>
+        </div>
+
+      </div><div class="ex-panel" role="tabpanel" id="p-priv" aria-labelledby="t-priv" hidden>
+        <div class="ex-text">
+          <h3>I dati dei tuoi clienti restano al sicuro.</h3>
+          <div class="pair"><span class="label">Dove l'ho già fatto</span><p>BibiCiclo non manda a nessuno i dati sulla salute: restano sul telefono. In CarGuy le foto partono senza posizione e le zone private spariscono dalle mappe.</p></div>
+          <div class="pair voi"><span class="label">Cosa può fare per te</span><p>Raccolgo solo quello che serve, e decidiamo insieme chi lo vede e per quanto tempo si tiene, come chiede il GDPR. È anche la materia di uno dei miei esami, superato con 30.</p></div>
+        </div>
+        <div class="mock">
+          <div class="mock-bar"><span class="label">Dove finiscono i dati</span><span class="label">regole reali</span></div>
+          <div class="mock-body">
+            <ul class="m-lock">
+              <li><span>Date del ciclo (BibiCiclo)</span><span>solo sul telefono</span></li>
+              <li><span>Copia di sicurezza (BibiCiclo)</span><span>file dell'utente</span></li>
+              <li><span>Casa e lavoro nelle tracce (CarGuy)</span><span>tagliate</span></li>
+              <li><span>Posizione nelle foto (CarGuy)</span><span>rimossa prima dell'invio</span></li>
+              <li><span>Codici d'accesso (CarGuy)</span><span>solo impronta cifrata</span></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap block tight" id="metodo">
+    <div class="sec-head rv"><div><span class="label">Come lavoriamo</span><h2>Dal primo caffè alla consegna.</h2></div>
+    <p>Cinque passaggi, sempre gli stessi. Valgono per un'app per iPhone come per il programma che tiene in ordine le scadenze di un piccolo ufficio.</p></div>
+    <div class="method-grid">
+      <ol class="steps">
+        <li class="rv"><div><h3>Ci conosciamo</h3><p>Mi racconti come lavori e dove si perde tempo. Faccio domande e prendo appunti. In questa fase non ti vendo niente.</p></div></li>
+        <li class="rv"><div><h3>Ti mando una proposta</h3><p>Una pagina scritta: cosa farà il programma, cosa non farà, quanto costa e in quanto tempo.</p></div></li>
+        <li class="rv"><div><h3>Lo costruisco a piccoli passi</h3><p>Vedi i progressi man mano e puoi correggere la rotta quando serve, non a lavoro finito.</p></div></li>
+        <li class="rv"><div><h3>Lo controllo prima che arrivi a te</h3><p>Ogni funzione ha i suoi test automatici e passa una revisione di sicurezza: codici d'accesso protetti, dati ridotti al minimo, niente informazioni che escono per sbaglio.</p></div></li>
+        <li class="rv"><div><h3>Te lo consegno e resto disponibile</h3><p>Ti spiego come si usa e ti lascio istruzioni scritte e una copia di sicurezza dei dati. Se qualcosa non va, sai a chi scrivere.</p></div></li>
+      </ol>
+      <aside class="precision rv">
+        <span class="label">Gli strumenti</span>
+        <h3>Controlli che non si stancano.</h3>
+        <p>Uso strumenti di revisione automatica che rileggono il codice riga per riga, generano centinaia di casi di prova e cercano falle di sicurezza. Sono controlli che a mano si fanno una volta e poi, per stanchezza, si saltano.</p>
+        <p>Le decisioni restano mie, e la responsabilità di quello che consegno pure.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="wrap block">
+    <div class="sec-head rv" style="margin-bottom:24px"><div><span class="label">Domande</span><h2>Quello che di solito mi chiedono.</h2></div></div>
+    <div class="faq rv">
+      <details><summary>Devo rifare il mio sito?</summary><p>No. Lo strumento si apre da un link e, se vuoi, lo colleghiamo al sito che hai già.</p></details>
+      <details><summary>Serve installare qualcosa?</summary><p>No. Funziona dal browser del telefono o del computer e si può aggiungere alla schermata Home, come un'app.</p></details>
+      <details><summary>Quanto costa?</summary><p>Dipende da cosa serve. Dopo il primo incontro ricevi una proposta scritta con il prezzo, prima di decidere qualsiasi cosa. I primi progetti hanno condizioni agevolate, in cambio della possibilità di raccontarli qui.</p></details>
+      <details><summary>Sei uno studente: e se poi sparisci?</summary><p>Domanda giusta. Consegno ogni progetto con istruzioni scritte, codice ordinato e una copia dei dati, così chiunque può riprenderlo in mano. E finché lavoriamo insieme, mi trovi.</p></details>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <h2 class="rv">Hai un lavoro che ti porta via troppo tempo? Raccontamelo.</h2>
+        <span class="addr" id="addr-piede">lorenzo.bernardini777@gmail.com</span>
+        <div class="cta" style="margin-top:0">
+          <a class="btn primary" href="mailto:lorenzo.bernardini777@gmail.com">Scrivimi <span class="arr">→</span></a>
+          <button type="button" class="btn" data-copia="lorenzo.bernardini777@gmail.com" aria-controls="addr-piede">Copia indirizzo</button>
+        </div>
+      </div>
+      <nav class="foot-nav" aria-label="Pagine">
+        <a href="index.html">Home</a>
+        <a href="servizi.html">Cosa faccio</a>
+        <a href="progetti.html">Progetti</a>
+        <a href="chisono.html">Chi sono</a>
+        <a href="contatti.html">Contatti</a>
+      </nav>
+    </div>
+    <div class="foot-bottom"><span>Lorenzo Bernardini · Bologna · <a href="https://github.com/lberna777" target="_blank" rel="noopener">GitHub</a></span><span>Sito in HTML e CSS · nessun cookie, nessuna statistica</span></div>
+  </div>
+</footer>
+
+<script src="assets/sito.js"></script>
+<!-- /BODY -->
+</body>
+</html>

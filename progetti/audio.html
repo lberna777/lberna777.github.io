@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Un compressore stereo con saturazione e allargamento Mid/Side, un sintetizzatore FM con sequencer interno e uno schema che trasforma ogni errore in una regola.">
+<title>Plugin audio · Lorenzo Bernardini</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../assets/stile.css">
+<!-- /HEAD -->
+</head>
+<body>
+<!-- BODY -->
+<header class="top">
+  <div class="wrap top-row">
+    <a class="brand" href="../index.html">Lorenzo Bernardini</a>
+    <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav class="nav" id="menu" aria-label="Principale">
+      <a href="../servizi.html">Cosa faccio</a><a href="../progetti.html" aria-current="page">Progetti</a><a href="../chisono.html">Chi sono</a>
+      <a class="nav-cta" href="../contatti.html">Scrivimi</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inizio">
+  <div class="wrap">
+    <div class="proj-head">
+      <div>
+        <nav class="crumbs" aria-label="Percorso"><a href="../progetti.html">Progetti</a><span>/</span><span>Plugin audio</span></nav>
+        <h1>Plugin audio</h1>
+        <p class="lede">Un compressore stereo con saturazione e allargamento Mid/Side, un sintetizzatore FM con sequencer interno e uno schema che trasforma ogni errore in una regola.</p>
+      </div>
+      <div class="info rv"><div><span class="label">Formati</span><span class="v">AU, VST3, standalone</span></div><div><span class="label">Periodo</span><span class="v">maggio – agosto 2026</span></div><div><span class="label">Stato</span><span class="v">compilati per Mac e Linux</span></div></div>
+    </div>
+    <div class="proj-visual rv"><div class="plate"><img class="wipe" src="../img/nemo.webp" width="509" height="758" alt="Interfaccia del compressore NEMO con fader, manopole e misuratore di livello"></div></div>
+    <div class="proj-body">
+      <article class="prose"><section class="rv"><h2>Cosa ho costruito</h2><div class="plugins">
+            <div><h4>NEMO</h4><p>Compressore stereo con filtri, saturazione a nastro e allargamento Mid/Side. Mac (Apple Silicon e Intel) e Linux.</p></div>
+            <div><h4>FreakFM</h4><p>Sintetizzatore FM a 4 operatori con sequencer interno, validato con pluginval al livello 8 senza errori.</p></div>
+            <div><h4>AcidMoog</h4><p>Sintetizzatore di bassi tra TB-303 e Moog, con filtro ladder sovracampionato. In sviluppo.</p></div>
+            <div><h4>Plugin-Creator</h4><p>Lo schema di partenza per i plugin nuovi: ogni regola nasce da un errore trovato in NEMO e corretto.</p></div>
+          </div></section><section class="rv"><h2>Come lavoro su un plugin</h2><p>Un plugin audio elabora il suono decine di migliaia di volte al secondo, e un errore si sente subito. Per questo ogni plugin passa da pluginval, uno strumento che lo mette sotto sforzo come farebbe un vero programma musicale.</p></section><section class="rv"><h2>Da dove nasce</h2><p>Il suono mi ha sempre incuriosito, e a un certo punto volevo capire cosa succede davvero dentro gli effetti che si usano per lavorarlo. Il modo più diretto per capirlo era scriverne uno.</p></section><section class="rv imparato"><h2>Cosa mi ha insegnato</h2><p>NEMO ha richiesto sei revisioni dell'interfaccia. Da ogni errore ho ricavato una regola, e le regole sono diventate Plugin-Creator: lo schema da cui parte ogni plugin nuovo, perché lo stesso errore non si ripeta.</p></section></article>
+      <aside class="tech rv"><h2>Dietro le quinte</h2><dl><div><dt>Linguaggi e librerie</dt><dd>C++17, JUCE 8, CMake, Catch2</dd></div><div><dt>Verifica</dt><dd>test sull'elaborazione del suono, render di riferimento, pluginval, auval</dd></div></dl><div class="links"><a href="https://github.com/lberna777/NEMO-StereoCompressor" target="_blank" rel="noopener">NEMO <span>↗</span></a><a href="https://github.com/lberna777/plugin-creator" target="_blank" rel="noopener">Plugin-Creator <span>↗</span></a></div></aside>
+    </div>
+  </div>
+  <div class="wrap" style="padding-bottom:clamp(48px,7vw,88px)">
+    <nav class="pn" aria-label="Altri progetti">
+      <a href="quiz.html"><span class="label">← Precedente</span><b>Diritto Quiz T</b></a>
+      <a href="carguy.html"><span class="label">Successivo →</span><b>CarGuy</b></a>
+    </nav>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <h2 class="rv">Hai un lavoro che ti porta via troppo tempo? Raccontamelo.</h2>
+        <span class="addr" id="addr-piede">lorenzo.bernardini777@gmail.com</span>
+        <div class="cta" style="margin-top:0">
+          <a class="btn primary" href="mailto:lorenzo.bernardini777@gmail.com">Scrivimi <span class="arr">→</span></a>
+          <button type="button" class="btn" data-copia="lorenzo.bernardini777@gmail.com" aria-controls="addr-piede">Copia indirizzo</button>
+        </div>
+      </div>
+      <nav class="foot-nav" aria-label="Pagine">
+        <a href="../index.html">Home</a>
+        <a href="../servizi.html">Cosa faccio</a>
+        <a href="../progetti.html">Progetti</a>
+        <a href="../chisono.html">Chi sono</a>
+        <a href="../contatti.html">Contatti</a>
+      </nav>
+    </div>
+    <div class="foot-bottom"><span>Lorenzo Bernardini · Bologna · <a href="https://github.com/lberna777" target="_blank" rel="noopener">GitHub</a></span><span>Sito in HTML e CSS · nessun cookie, nessuna statistica</span></div>
+  </div>
+</footer>
+
+<script src="../assets/sito.js"></script>
+<!-- /BODY -->
+</body>
+</html>

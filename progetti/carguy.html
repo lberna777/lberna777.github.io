@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Cronometra i tratti di strada che ami, confronta ogni passaggio con il tuo migliore e si comanda dal polso, con l'iPhone bloccato nel supporto.">
+<title>CarGuy · Lorenzo Bernardini</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../assets/stile.css">
+<!-- /HEAD -->
+</head>
+<body>
+<!-- BODY -->
+<header class="top">
+  <div class="wrap top-row">
+    <a class="brand" href="../index.html">Lorenzo Bernardini</a>
+    <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav class="nav" id="menu" aria-label="Principale">
+      <a href="../servizi.html">Cosa faccio</a><a href="../progetti.html" aria-current="page">Progetti</a><a href="../chisono.html">Chi sono</a>
+      <a class="nav-cta" href="../contatti.html">Scrivimi</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inizio">
+  <div class="wrap">
+    <div class="proj-head">
+      <div>
+        <nav class="crumbs" aria-label="Percorso"><a href="../progetti.html">Progetti</a><span>/</span><span>CarGuy</span></nav>
+        <h1>CarGuy</h1>
+        <p class="lede">Cronometra i tratti di strada che ami, confronta ogni passaggio con il tuo migliore e si comanda dal polso, con l'iPhone bloccato nel supporto.</p>
+      </div>
+      <div class="info rv"><div><span class="label">Piattaforme</span><span class="v">iPhone, Apple Watch, web</span></div><div><span class="label">Periodo</span><span class="v">settembre – ottobre 2026</span></div><div><span class="label">Stato</span><span class="v">web app online</span></div></div>
+    </div>
+    <div class="proj-visual rv"><div class="phones">
+          <div class="phone wipe"><img src="../img/carguy-cruscotto.webp" width="520" height="1131" alt="Cruscotto di CarGuy: mappa, settore 2 di 3, distacco di meno 1,4 secondi in verde, 74 km/h"></div>
+          <div class="phone wipe" style="transition-delay:.15s"><img src="../img/carguy-garage.webp" width="460" height="1000" alt="Schermata Garage di CarGuy con due auto"></div>
+        </div>
+        <figure class="tav-fig" style="margin-top:28px"><img class="strip wipe" src="../img/carguy-schermate.webp" width="1214" height="500" alt="Cinque schermate di CarGuy: garage, giri, dettaglio di un giro, confronto per settori, prove di accelerazione"><figcaption>Garage, elenco dei giri, dettaglio di un giro, confronto settore per settore e prove di accelerazione.</figcaption></figure></div>
+    <div class="proj-body">
+      <article class="prose"><section class="rv"><h2>Cosa fa</h2><p>Si monta l'iPhone nel supporto e si parte dall'Apple Watch. CarGuy registra il giro e riconosce da solo i tratti che hai salvato, in andata e in ritorno. A ogni punto GPS calcola se sei avanti o indietro rispetto al tuo passaggio migliore, e al polso arriva una vibrazione a ogni settore: una se guadagni, due se perdi. Misura l'accelerazione da fermo unendo accelerometro e GPS, e in cinque circuiti italiani conta i giri da solo.</p><p>Fuori dall'auto c'è il garage: chilometri, contratto di leasing, scadenze con promemoria e spese, mezzo per mezzo.</p></section><section class="rv"><h2>Le scelte di cui vado fiero</h2><p>Su strada non si gareggia. Nell'app non esistono classifiche pubbliche su strada; i tempi si condividono solo con gli amici, come sagoma del tracciato e senza mappa, e i giri pubblicati non mostrano mai durata, chilometri o velocità.</p><p>La privacy fa parte del progetto. Casa e lavoro vengono tagliati dalle tracce, le foto partono senza posizione e sul server arriva solo quello che decidi di pubblicare.</p></section><section class="rv"><h2>Da dove nasce</h2><p>Mi piace guidare, e volevo sapere se su una strada che conosco stavo andando meglio o peggio dell'ultima volta. Le app che trovavo erano pensate per la pista, oppure chiedevano di toccare il telefono mentre si guida. Così ho iniziato a scriverne una mia.</p><p>Da lì il progetto è cresciuto: l'Apple Watch, una versione web per gli amici senza iPhone, il garage con le scadenze e una piccola rete per condividere i giri.</p></section><section class="rv imparato"><h2>Cosa mi ha insegnato</h2><p>Ho imparato che le regole dell'App Store, lette con attenzione, aiutano a progettare meglio. E che tenere la stessa logica in due linguaggi, Swift sul telefono e TypeScript sul web, funziona solo se un controllo automatico confronta le due versioni numero per numero.</p></section></article>
+      <aside class="tech rv"><h2>Dietro le quinte</h2><dl><div><dt>Linguaggi e librerie</dt><dd>Swift 6, SwiftUI, SwiftData, CoreLocation, CoreMotion, StoreKit 2, WidgetKit; TypeScript, Preact, MapLibre</dd></div><div><dt>Server</dt><dd>Cloudflare Workers con database D1</dd></div><div><dt>Verifica</dt><dd>Test in Swift e TypeScript con casi di confronto condivisi; ogni migrazione del database provata prima su una copia</dd></div></dl><div class="links"><a href="https://carguy-web.lorenzo-bern.workers.dev/?simula" target="_blank" rel="noopener">Prova la web app con un GPS simulato <span>↗</span></a></div></aside>
+    </div>
+  </div>
+  <section class="wrap" style="padding-bottom:clamp(48px,7vw,88px)">
+    <div class="sec-head rv" style="margin-bottom:24px"><div><span class="label">Per chi è tecnico</span><h2>Una logica, tre app.</h2></div>
+    <p>La logica sta in un pacchetto Swift che compila anche su Linux. La web app ne usa una traduzione in TypeScript, verificata sugli stessi casi di prova.</p></div>
+    <figure class="diagram rv" style="margin:0">
+        <svg viewBox="0 0 930 300" role="img" aria-labelledby="dia-t">
+          <title id="dia-t">Architettura di CarGuy: Apple Watch, app iPhone, DriveCore, porta TypeScript, web app e server su Cloudflare</title>
+          <defs>
+            <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="arrow" d="M0 0 L10 5 L0 10 z"/></marker>
+            <marker id="aha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="arrow a" d="M0 0 L10 5 L0 10 z"/></marker>
+          </defs>
+          <rect class="box" x="20" y="30" width="160" height="70"/>
+          <text class="t1" x="36" y="60">Apple Watch</text>
+          <text class="t2" x="36" y="82">comandi · cruscotto</text>
+
+          <rect class="box" x="260" y="30" width="205" height="70"/>
+          <text class="t1" x="276" y="60">App iPhone</text>
+          <text class="t2" x="276" y="82">SwiftUI · SwiftData · sensori</text>
+
+          <rect class="box core" x="540" y="30" width="200" height="70"/>
+          <text class="t1" x="556" y="60">DriveCore</text>
+          <text class="t2" x="556" y="82">Swift puro · tutta la logica</text>
+
+          <rect class="box core" x="540" y="200" width="200" height="70"/>
+          <text class="t1" x="556" y="230">Porta TypeScript</text>
+          <text class="t2" x="556" y="252">stessi calcoli, stesse soglie</text>
+
+          <rect class="box" x="260" y="200" width="205" height="70"/>
+          <text class="t1" x="276" y="230">Web app</text>
+          <text class="t2" x="276" y="252">Preact · IndexedDB · PWA</text>
+
+          <rect class="box" x="20" y="115" width="160" height="70"/>
+          <text class="t1" x="36" y="145">carguy-api</text>
+          <text class="t2" x="36" y="167">Workers + D1 · social</text>
+
+          <path class="ln" d="M180 65 H258" marker-end="url(#ah)"/>
+          <text class="lt" x="186" y="46">Watch</text><text class="lt" x="186" y="58">Connectivity</text>
+          <path class="ln" d="M465 65 H538" marker-end="url(#ah)"/>
+          <path class="ln dash" d="M640 100 V198" marker-end="url(#aha)"/>
+          <text class="lt a" x="650" y="145">casi di parità</text>
+          <text class="lt a" x="650" y="160">generati dai test Swift</text>
+          <path class="ln" d="M538 235 H467" marker-end="url(#ah)"/>
+          <path class="ln" d="M300 100 V120 Q300 150 270 150 H182" marker-end="url(#ah)"/>
+          <path class="ln" d="M300 200 V180 Q300 150 270 150" />
+          <text class="lt" x="200" y="142">HTTPS</text>
+          <text class="lt" x="776" y="60">nessun framework Apple:</text>
+          <text class="lt" x="776" y="75">compila anche su Linux</text>
+          <path class="ln" d="M770 66 H742"/>
+        </svg>
+      </figure>
+  </section>
+  <div class="wrap" style="padding-bottom:clamp(48px,7vw,88px)">
+    <nav class="pn" aria-label="Altri progetti">
+      <a href="audio.html"><span class="label">← Precedente</span><b>Plugin audio</b></a>
+      <a href="cockpit.html"><span class="label">Successivo →</span><b>cockpit</b></a>
+    </nav>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <h2 class="rv">Hai un lavoro che ti porta via troppo tempo? Raccontamelo.</h2>
+        <span class="addr" id="addr-piede">lorenzo.bernardini777@gmail.com</span>
+        <div class="cta" style="margin-top:0">
+          <a class="btn primary" href="mailto:lorenzo.bernardini777@gmail.com">Scrivimi <span class="arr">→</span></a>
+          <button type="button" class="btn" data-copia="lorenzo.bernardini777@gmail.com" aria-controls="addr-piede">Copia indirizzo</button>
+        </div>
+      </div>
+      <nav class="foot-nav" aria-label="Pagine">
+        <a href="../index.html">Home</a>
+        <a href="../servizi.html">Cosa faccio</a>
+        <a href="../progetti.html">Progetti</a>
+        <a href="../chisono.html">Chi sono</a>
+        <a href="../contatti.html">Contatti</a>
+      </nav>
+    </div>
+    <div class="foot-bottom"><span>Lorenzo Bernardini · Bologna · <a href="https://github.com/lberna777" target="_blank" rel="noopener">GitHub</a></span><span>Sito in HTML e CSS · nessun cookie, nessuna statistica</span></div>
+  </div>
+</footer>
+
+<script src="../assets/sito.js"></script>
+<!-- /BODY -->
+</body>
+</html>

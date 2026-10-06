@@ -84,6 +84,32 @@
   }
   window.addEventListener('scroll', onScroll, { passive: true }); window.addEventListener('resize', onScroll); onScroll();
 
+  /* Menu su telefono */
+  var mb = document.querySelector('.menu-btn'), menu = document.getElementById('menu');
+  if (mb && menu) {
+    menu.setAttribute('data-open', 'false');
+    mb.addEventListener('click', function () {
+      var open = mb.getAttribute('aria-expanded') !== 'true';
+      mb.setAttribute('aria-expanded', open); menu.setAttribute('data-open', open);
+      mb.textContent = open ? 'Chiudi' : 'Menu';
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && mb.getAttribute('aria-expanded') === 'true') { mb.click(); mb.focus(); }
+    });
+  }
+
+  /* Filtri dei progetti */
+  var fbtn = document.querySelectorAll('.filters button');
+  Array.prototype.forEach.call(fbtn, function (b) {
+    b.addEventListener('click', function () {
+      var f = b.getAttribute('data-f');
+      Array.prototype.forEach.call(fbtn, function (x) { x.setAttribute('aria-pressed', x === b); });
+      Array.prototype.forEach.call(document.querySelectorAll('.cards .card'), function (c) {
+        c.hidden = f !== 'tutti' && (c.getAttribute('data-tipo') || '').split(' ').indexOf(f) < 0;
+      });
+    });
+  });
+
   /* Vetrina in apertura */
   var vt = document.querySelector('.vetrina');
   if (vt) {
