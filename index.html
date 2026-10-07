@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="assets/stile.css?v=71ed519fba">
+<link rel="stylesheet" href="assets/stile.css?v=e50b3e5fdf">
 <!-- /HEAD -->
 </head>
 <body>
@@ -24,12 +24,12 @@
   </div>
 </header>
 
-<main id="inizio">
+<main id="inizio" class="home">
   <section class="wrap home-hero">
     <div>
       <div class="eyebrow label"><span>Sviluppo software</span><span>Bologna</span></div>
       <h1 id="titolo">Costruisco piccoli software che <em>fanno risparmiare tempo</em>.</h1>
-      <p class="lede">Mi chiamo Lorenzo e studio Ingegneria informatica all'Università di Bologna. Lavoro con attività, studi e associazioni che perdono ore dietro a scadenze, moduli e documenti, e costruisco su misura lo strumento che manca.</p>
+      <p class="lede">Mi chiamo Lorenzo e studio Ingegneria informatica all'Università di Bologna. Mi rivolgo ad attività, studi e associazioni che perdono ore dietro a scadenze, moduli e documenti, e per loro costruisco su misura lo strumento che manca.</p>
       <div class="cta">
         <a class="btn primary" href="contatti.html">Raccontami il tuo problema <span class="arr">→</span></a>
         <a class="btn" href="progetti.html">Guarda i progetti</a>
@@ -39,13 +39,13 @@
       <figure class="ritratto"><img src="img/foto/ritratto.jpg" alt="Lorenzo Bernardini" onerror="this.closest('.hero-visual').classList.add('no-photo')"><figcaption><b>Lorenzo Bernardini</b>Ingegneria informatica · UniBo</figcaption></figure>
       <figure class="vetrina" aria-label="Schermate di alcuni progetti">
         <div class="stage">
-          <div class="slide is-on" data-name="CarGuy" data-kind="App per iPhone, Watch e web"><div class="dev phone"><img src="img/carguy-cruscotto.webp" width="520" height="1131" alt="CarGuy: cruscotto durante un tratto, con il distacco dal riferimento in verde"></div></div>
+          <div class="slide is-on" data-name="CarGuy" data-kind="Garage con scadenze e spese"><div class="dev phone"><img src="img/carguy-garage.webp" width="460" height="1000" alt="CarGuy: il garage con le auto, i chilometri e le prove"></div></div>
           <div class="slide" data-name="cockpit" data-kind="Gestionale personale"><div class="dev browser"><div class="chrome" aria-hidden="true"><i></i><i></i><i></i><span>cockpit · Materiali</span></div><img src="img/cockpit-materiali.webp" width="1100" height="675" alt="cockpit: archivio di 562 file con filtri per tipo"></div></div>
           <div class="slide" data-name="BibiCiclo" data-kind="Web app, dati solo sul telefono"><div class="dev phone"><img src="img/bibiciclo-schermo.webp" width="460" height="995" alt="BibiCiclo: calendario del mese con i giorni stimati"></div></div>
           <div class="slide" data-name="NEMO" data-kind="Plugin audio AU e VST3"><div class="dev plugin"><img src="img/nemo.webp" width="509" height="758" alt="NEMO: interfaccia del compressore stereo"></div></div>
         </div>
         <figcaption class="vt-cap">
-          <div class="vt-text"><span class="label" id="vt-kind">App per iPhone, Watch e web</span><b id="vt-name">CarGuy</b></div>
+          <div class="vt-text"><span class="label" id="vt-kind">Garage con scadenze e spese</span><b id="vt-name">CarGuy</b></div>
           <div class="vt-seg" aria-label="Scegli la schermata">
             <button type="button" class="on" aria-label="CarGuy" aria-pressed="true"><i></i></button>
             <button type="button" aria-label="cockpit" aria-pressed="false"><i></i></button>
@@ -68,28 +68,28 @@
   <section class="wrap block">
     <div class="note">
       <figure class="foto r45"><img src="img/foto/al-computer.jpg" alt="Lorenzo al lavoro al computer" onerror="this.closest('figure').remove()"></figure>
-      <div class="rv">
-        <span class="label">Due parole</span>
-        <h2>Preferisco capire il problema prima di scrivere una riga di codice.</h2>
-        <p>Molte attività non hanno bisogno di un gestionale da migliaia di euro. Hanno bisogno che una cosa precisa smetta di essere un problema: il certificato che scade senza che nessuno se ne accorga, il modulo ricopiato tre volte, la cartella in cui non si trova mai niente.</p>
+      <div class="note-text rv">
+        <div class="note-head"><span class="label">Due parole</span>
+        <h2>Preferisco capire il problema prima di scrivere una riga di codice.</h2></div>
+        <div class="note-body"><p>Molte attività non hanno bisogno di un gestionale da migliaia di euro. Hanno bisogno che una cosa precisa smetta di essere un problema: il certificato che scade senza che nessuno se ne accorga, il modulo ricopiato tre volte, la cartella in cui non si trova mai niente.</p>
         <p>Per questo il primo incontro serve ad ascoltare. Se basta un foglio condiviso, te lo dico. Se serve un piccolo software, lo costruisco io, ti spiego come funziona e resto il tuo punto di riferimento.</p>
-        <p class="firma">Lorenzo</p>
+        <p class="firma">Lorenzo</p></div>
       </div>
     </div>
   </section>
 
   <section class="wrap block tight">
-    <div class="sec-head rv" style="margin-bottom:28px"><div><span class="label">Alcuni lavori</span><h2>Tre progetti da cui partire.</h2></div>
-    <p>Riconoscimento automatico dei percorsi, scadenze e archivio che si aggiornano da soli, dati sensibili che non lasciano il telefono. <a href="progetti.html">Qui ci sono tutti.</a></p></div>
-    <div class="cards"><a class="card rv" href="progetti/carguy.html" data-tipo="app">
-        <div class="card-img phone"><img src="img/carguy-cruscotto.webp" alt="Il cruscotto di CarGuy durante un tratto" loading="lazy"></div>
-        <div class="card-body"><span class="label">App per iPhone, Apple Watch e web</span><h3>CarGuy</h3><p>Riconosce da sola i tuoi tratti di strada e ti dice, settore per settore, dove guadagni.</p><span class="go">Scopri il progetto →</span></div>
-      </a><a class="card rv" href="progetti/cockpit.html" data-tipo="organizzazione">
-        <div class="card-img full"><img src="img/cockpit-materiali.webp" alt="La pagina Materiali di cockpit" loading="lazy"></div>
-        <div class="card-body"><span class="label">Gestionale personale</span><h3>cockpit</h3><p>Ogni mattina mi dice cosa è in ritardo, cosa scade e quale esame viene dopo.</p><span class="go">Scopri il progetto →</span></div>
-      </a><a class="card rv" href="progetti/bibiciclo.html" data-tipo="app">
-        <div class="card-img phone"><img src="img/bibiciclo-schermo.webp" alt="Il calendario di BibiCiclo" loading="lazy"></div>
-        <div class="card-body"><span class="label">Web app installabile</span><h3>BibiCiclo</h3><p>Previsioni del ciclo, Calendario iOS e backup verificati, senza server né account.</p><span class="go">Scopri il progetto →</span></div>
+    <div class="sec-head rv" style="margin-bottom:28px"><div><span class="label">Alcuni lavori</span><h2>Scadenze, archivio, promemoria.</h2></div>
+    <p>Tre funzioni che ho già costruito nei miei progetti e che servono a qualunque ufficio. <a href="progetti.html">Qui ci sono tutti i progetti.</a></p></div>
+    <div class="cards"><a class="card rv" href="progetti/carguy.html">
+        <div class="card-img full"><img src="img/card-garage.webp" alt="Il garage di CarGuy" loading="lazy"></div>
+        <div class="card-body"><span class="label">Scadenze e promemoria</span><h3>CarGuy · il garage</h3><p>Scadenze a data o a chilometri, ognuna con il suo preavviso. Quando ne segni una come fatta, la successiva si pianifica da sola.</p><span class="go">Scopri il progetto →</span></div>
+      </a><a class="card rv" href="progetti/cockpit.html">
+        <div class="card-img full"><img src="img/card-cockpit.webp" alt="La pagina Materiali di cockpit" loading="lazy"></div>
+        <div class="card-body"><span class="label">Archivio e pianificazione</span><h3>cockpit</h3><p>Più di cinquecento documenti che si ritrovano in due secondi, e un piano che sa quali scadenze dipendono da quali.</p><span class="go">Scopri il progetto →</span></div>
+      </a><a class="card rv" href="progetti/agenticos.html">
+        <div class="card-img full"><img src="img/agenticos-routine.webp" alt="La giornata delle routine di AgenticOS" loading="lazy"></div>
+        <div class="card-body"><span class="label">Promemoria da approvare</span><h3>AgenticOS</h3><p>Ogni mattina prepara nota e agenda, scrive le risposte come bozze e non invia nulla senza conferma.</p><span class="go">Scopri il progetto →</span></div>
       </a></div>
   </section>
 
@@ -122,11 +122,11 @@
         <a href="contatti.html">Contatti</a>
       </nav>
     </div>
-    <div class="foot-bottom"><span>Lorenzo Bernardini · Bologna · <a href="https://github.com/lberna777" target="_blank" rel="noopener">GitHub</a></span><span>Sito in HTML e CSS · nessun cookie, nessuna statistica</span></div>
+    <div class="foot-bottom"><span>Lorenzo Bernardini · Bologna · <a href="https://github.com/lberna777" target="_blank" rel="noopener">GitHub</a></span><span>Il sito non usa cookie né statistiche proprie</span></div>
   </div>
 </footer>
 
-<script src="assets/sito.js?v=3c07cba106"></script>
+<script src="assets/sito.js?v=a722e6f9f8"></script>
 <!-- /BODY -->
 </body>
 </html>

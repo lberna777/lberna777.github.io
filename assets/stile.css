@@ -802,3 +802,23 @@ section.block.tight { padding-block: clamp(40px, 6vw, 72px); }
 .mailbox, .mailbox.light { border: 0; padding: 0; background: transparent; }
 .plate .phone img { max-height: none; width: 100%; }
 .interests div { align-content: start; }
+
+/* Home: spazi verticali ridotti di circa un terzo */
+.home .home-hero { padding-block: clamp(28px, 4.6vw, 58px) clamp(28px, 4vw, 48px); }
+.home section.block { padding-block: clamp(43px, 6.7vw, 80px); }
+.home section.block.tight { padding-block: clamp(27px, 4vw, 48px); }
+
+/* «Due parole»: senza foto il testo si dispone su due colonne proporzionate */
+.note-text { display: grid; gap: 0; }
+.note-body p + p { margin-top: 14px; }
+.note:not(:has(.foto)) { grid-template-columns: minmax(0, 1fr); max-width: none; }
+.note:not(:has(.foto)) .note-text { grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(20px, 5vw, 64px); align-items: start; }
+.note:not(:has(.foto)) .note-text h2 { margin-bottom: 0; }
+.note:not(:has(.foto)) .note-body { max-width: 38rem; }
+@media (max-width: 860px) { .note:not(:has(.foto)) .note-text { grid-template-columns: minmax(0, 1fr); } }
+
+/* Telefono: il pulsante secondario torna un pulsante, accanto al principale */
+@media (max-width: 480px) {
+  .cta { gap: 10px; }
+  main .cta .btn:not(.primary) { border: 1.5px solid var(--rule); text-decoration: none; padding: 12px 18px; }
+}

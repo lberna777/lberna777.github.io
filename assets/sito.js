@@ -2,6 +2,9 @@
   var root = document.documentElement;
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   root.classList.add('js');
+  if (!root.getAttribute('lang')) root.setAttribute('lang', 'it');
+  var md = document.querySelector('body meta[name="description"]');
+  if (md && !document.querySelector('head meta[name="description"]')) document.head.appendChild(md);
 
   /* Titolo: parole che salgono in sequenza */
   var h1 = document.getElementById('titolo');
@@ -201,7 +204,7 @@
       opts.forEach(function (o) { o.disabled = true; if (o.hasAttribute('data-ok')) o.classList.add('ok'); });
       if (!ok) b.classList.add('ko');
       box = ok ? 4 : 1; moveCard(box);
-      exp.textContent = (ok ? 'Giusto. La domanda sale alla scatola 4 e torna fra 3 giorni. ' : 'Sbagliato. La domanda torna alla scatola 1 e si ripropone subito. ') +
+      exp.textContent = (ok ? 'Giusto. La domanda sale alla scatola 4 e torna fra 7 giorni. ' : 'Sbagliato. La domanda torna alla scatola 1 e si ripropone subito. ') +
         'Pseudonimizzato vuol dire ancora riconducibile a una persona: solo il dato anonimo esce dal GDPR.';
       reset.hidden = false;
     });
