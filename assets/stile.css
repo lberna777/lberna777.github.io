@@ -822,3 +822,20 @@ section.block.tight { padding-block: clamp(40px, 6vw, 72px); }
   .cta { gap: 10px; }
   main .cta .btn:not(.primary) { border: 1.5px solid var(--rule); text-decoration: none; padding: 12px 18px; }
 }
+
+/* Carosello: frecce per scorrere a mano */
+.vt-arr { position: absolute; top: 50%; z-index: 3; width: 40px; height: 40px; margin-top: -20px;
+  display: grid; place-items: center; border: 1px solid var(--rule); border-radius: 50%;
+  background: color-mix(in srgb, var(--sheet) 88%, transparent); color: var(--ink);
+  font: 600 16px/1 var(--font-display, inherit); cursor: pointer;
+  opacity: .75; transition: opacity .2s, transform .2s var(--ease), background .2s; }
+.vt-arr.prev { left: 12px; } .vt-arr.next { right: 12px; }
+.vetrina:hover .vt-arr, .vt-arr:focus-visible { opacity: 1; }
+.vt-arr:hover { background: var(--sheet); transform: scale(1.06); }
+.vt-arr:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+@media (hover: none) { .vt-arr { opacity: .9; } }
+
+/* Home, «Alcuni lavori»: la funzione è il titolo della scheda */
+.home .card-body .label { font-family: var(--font-display); font-size: 1.5rem; font-weight: 800;
+  font-variation-settings: "wdth" 108; letter-spacing: 0; text-transform: none; color: var(--ink); line-height: 1.15; }
+.home .card-body h3 { font-size: 1.05rem; color: var(--accent); }

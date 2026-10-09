@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Archivo, 'Segoe UI', system-ui, sans-serif">
+  <defs>
+    <radialGradient id="a" cx="12%" cy="5%" r="60%"><stop offset="0" stop-color="#7B5CF0" stop-opacity=".32"/><stop offset="1" stop-color="#7B5CF0" stop-opacity="0"/></radialGradient>
+    <radialGradient id="b" cx="92%" cy="15%" r="55%"><stop offset="0" stop-color="#2F7DE1" stop-opacity=".24"/><stop offset="1" stop-color="#2F7DE1" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="#F3F2EE"/>
+  <rect width="800" height="500" fill="url(#a)"/>
+  <rect width="800" height="500" fill="url(#b)"/>
+
+  <!-- dock -->
+  <rect x="250" y="20" width="300" height="38" rx="19" fill="#fff" fill-opacity=".75" stroke="#16161A" stroke-opacity=".08"/>
+  <rect x="255" y="25" width="78" height="28" rx="14" fill="#16161A"/>
+  <g font-size="12.5" font-weight="500"><text x="294" y="43.5" text-anchor="middle" fill="#fff">Attività</text>
+  <text x="365" y="43.5" text-anchor="middle" fill="#4A4A52">Codice</text><text x="427" y="43.5" text-anchor="middle" fill="#4A4A52">Pagine</text><text x="487" y="43.5" text-anchor="middle" fill="#4A4A52">Diario</text></g>
+  <circle cx="531" cy="39" r="14" fill="#7B5CF0"/><text x="531" y="44.5" text-anchor="middle" font-size="18" fill="#fff">+</text>
+
+  <!-- titolo -->
+  <text x="36" y="104" font-size="44" font-weight="800" letter-spacing="-1.5" fill="#16161A">Plancia</text>
+  <g font-size="12">
+    <rect x="508" y="80" width="138" height="26" rx="13" fill="#fff" fill-opacity=".7" stroke="#16161A" stroke-opacity=".08"/><text x="520" y="97" fill="#16161A"><tspan font-weight="700">3</tspan> in scadenza oggi</text>
+    <rect x="654" y="80" width="110" height="26" rx="13" fill="#D23F2A" fill-opacity=".1"/><text x="666" y="97" fill="#D23F2A"><tspan font-weight="700">1</tspan> in ritardo</text>
+  </g>
+
+  <!-- ambiti -->
+  <g font-size="12" fill="#4A4A52">
+    <rect x="36" y="124" width="420" height="30" rx="15" fill="#fff" fill-opacity=".6" stroke="#16161A" stroke-opacity=".08"/>
+    <rect x="40" y="128" width="70" height="22" rx="11" fill="#7B5CF0" fill-opacity=".18"/>
+    <circle cx="54" cy="139" r="4" fill="#7B5CF0"/><text x="64" y="143" fill="#16161A">Tutto</text>
+    <circle cx="130" cy="139" r="4" fill="#7B5CF0"/><text x="140" y="143">Studio</text>
+    <circle cx="210" cy="139" r="4" fill="#2F7DE1"/><text x="220" y="143">Lavoro</text>
+    <circle cx="290" cy="139" r="4" fill="#DE3F78"/><text x="300" y="143">Musica</text>
+    <circle cx="368" cy="139" r="4" fill="#16958A"/><text x="378" y="143">Personale</text>
+  </g>
+
+  <!-- corsie -->
+  <g>
+    <rect x="36" y="172" width="236" height="300" rx="18" fill="#fff" fill-opacity=".62" stroke="#16161A" stroke-opacity=".08"/>
+    <rect x="284" y="172" width="236" height="300" rx="18" fill="#fff" fill-opacity=".62" stroke="#16161A" stroke-opacity=".08"/>
+    <rect x="532" y="172" width="232" height="300" rx="18" fill="#fff" fill-opacity=".62" stroke="#16161A" stroke-opacity=".08"/>
+  </g>
+  <g font-size="19" font-weight="700" fill="#16161A" letter-spacing="-.4">
+    <text x="52" y="204">Oggi</text><text x="300" y="204">Domani</text><text x="548" y="204">Questa settimana</text>
+  </g>
+  <rect x="52" y="214" width="204" height="3" rx="1.5" fill="#D23F2A"/>
+  <rect x="300" y="214" width="204" height="3" rx="1.5" fill="#B07A0C"/>
+  <rect x="548" y="214" width="200" height="3" rx="1.5" fill="#E2B85A"/>
+
+  <g font-size="12.5" fill="#16161A">
+    <!-- oggi -->
+    <rect x="48" y="228" width="212" height="56" rx="12" fill="#FBE9E6" stroke="#16161A" stroke-opacity=".06"/><rect x="48" y="240" width="3" height="32" fill="#7B5CF0"/>
+    <circle cx="66" cy="246" r="7.5" fill="none" stroke="#16161A" stroke-opacity=".25" stroke-width="1.4"/>
+    <text x="82" y="250" font-weight="500">Laboratorio Java, es. 3</text><text x="82" y="270" font-size="11" fill="#D23F2A" font-weight="600">ieri</text>
+    <rect x="48" y="292" width="212" height="56" rx="12" fill="#fff" stroke="#16161A" stroke-opacity=".06"/><rect x="48" y="304" width="3" height="32" fill="#7B5CF0"/>
+    <circle cx="66" cy="310" r="7.5" fill="none" stroke="#16161A" stroke-opacity=".25" stroke-width="1.4"/>
+    <text x="82" y="314" font-weight="500">Lezione di Calcolatori</text><text x="82" y="334" font-size="11" fill="#B07A0C" font-weight="600">oggi</text>
+    <rect x="48" y="356" width="212" height="56" rx="12" fill="#fff" stroke="#16161A" stroke-opacity=".06"/><rect x="48" y="368" width="3" height="32" fill="#2F7DE1"/>
+    <circle cx="66" cy="374" r="7.5" fill="#2C8A57"/><path d="M62.5 374l2.5 2.5 4.5-5" stroke="#fff" stroke-width="1.8" fill="none"/>
+    <text x="82" y="378" font-weight="500" fill="#7C7B82" text-decoration="line-through">Proposta a un cliente</text><text x="82" y="398" font-size="11" fill="#7C7B82">fatto</text>
+    <!-- domani -->
+    <rect x="296" y="228" width="212" height="56" rx="12" fill="#fff" stroke="#16161A" stroke-opacity=".06"/><rect x="296" y="240" width="3" height="32" fill="#7B5CF0"/>
+    <circle cx="314" cy="246" r="7.5" fill="none" stroke="#16161A" stroke-opacity=".25" stroke-width="1.4"/>
+    <text x="330" y="250" font-weight="500">Ripasso dei moduli 1–2</text><text x="330" y="270" font-size="11" fill="#7C7B82">domani</text>
+    <rect x="296" y="292" width="212" height="56" rx="12" fill="#fff" stroke="#16161A" stroke-opacity=".06"/><rect x="296" y="304" width="3" height="32" fill="#2F7DE1"/>
+    <circle cx="314" cy="310" r="7.5" fill="none" stroke="#16161A" stroke-opacity=".25" stroke-width="1.4"/>
+    <text x="330" y="314" font-weight="500">Aggiornare il portfolio</text>
+    <rect x="330" y="324" width="58" height="17" rx="8.5" fill="#3466D0" fill-opacity=".12"/><text x="337" y="336.5" font-size="10.5" fill="#3466D0">in corso</text>
+    <!-- settimana -->
+    <rect x="544" y="228" width="208" height="56" rx="12" fill="#fff" stroke="#16161A" stroke-opacity=".06"/><rect x="544" y="240" width="3" height="32" fill="#DE3F78"/>
+    <circle cx="562" cy="246" r="7.5" fill="none" stroke="#16161A" stroke-opacity=".25" stroke-width="1.4"/>
+    <text x="578" y="250" font-weight="500">Mix del nuovo brano</text><text x="578" y="270" font-size="11" fill="#7C7B82">sab 17 ott</text>
+    <rect x="544" y="292" width="208" height="56" rx="12" fill="#fff" stroke="#16161A" stroke-opacity=".06"/><rect x="544" y="304" width="3" height="32" fill="#7B5CF0"/>
+    <circle cx="562" cy="310" r="7.5" fill="none" stroke="#16161A" stroke-opacity=".25" stroke-width="1.4"/>
+    <text x="578" y="314" font-weight="500">Simulazione d'esame</text><text x="578" y="334" font-size="11" fill="#7C7B82">dom 18 ott</text>
+    <rect x="544" y="356" width="208" height="56" rx="12" fill="#fff" stroke="#16161A" stroke-opacity=".06"/><rect x="544" y="368" width="3" height="32" fill="#16958A"/>
+    <circle cx="562" cy="374" r="7.5" fill="none" stroke="#16161A" stroke-opacity=".25" stroke-width="1.4"/>
+    <text x="578" y="378" font-weight="500">Revisione dell'auto</text><text x="578" y="398" font-size="11" fill="#7C7B82">dom 18 ott</text>
+  </g>
+</svg>

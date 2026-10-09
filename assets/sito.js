@@ -133,6 +133,22 @@
       b.addEventListener('click', function () { show(k); });
       b.querySelector('i').addEventListener('animationend', function () { if (!reduce) show((k + 1) % slides.length); });
     });
+    /* Scorrimento a mano: frecce, tastiera, swipe */
+    function step(d) { show((cur + d + slides.length) % slides.length); }
+    var pv = vt.querySelector('.vt-arr.prev'), nx = vt.querySelector('.vt-arr.next');
+    if (pv) pv.addEventListener('click', function () { step(-1); });
+    if (nx) nx.addEventListener('click', function () { step(1); });
+    vt.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowLeft') { e.preventDefault(); step(-1); }
+      if (e.key === 'ArrowRight') { e.preventDefault(); step(1); }
+    });
+    var stage = vt.querySelector('.stage'), x0 = null, y0 = 0;
+    stage.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; y0 = e.touches[0].clientY; }, { passive: true });
+    stage.addEventListener('touchend', function (e) {
+      if (x0 === null) return;
+      var dx = e.changedTouches[0].clientX - x0, dy = e.changedTouches[0].clientY - y0; x0 = null;
+      if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) step(dx < 0 ? 1 : -1);
+    }, { passive: true });
     if ('IntersectionObserver' in window) new IntersectionObserver(function (es) { vt.classList.toggle('paused', !es[0].isIntersecting); }).observe(vt);
   }
 
