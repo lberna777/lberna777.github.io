@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Un compressore stereo con saturazione e allargamento Mid/Side, un sintetizzatore FM con sequencer interno e uno schema che trasforma ogni errore in una regola.">
+<meta name="description" content="Un compressore stereo, un registratore a cassetta per il master, un campionatore a 16 pad, due sintetizzatori e uno schema che trasforma ogni errore in una regola.">
 <title>Plugin audio · Lorenzo Bernardini</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,9 +30,9 @@
       <div>
         <nav class="crumbs" aria-label="Percorso"><a href="../progetti.html">Progetti</a><span>/</span><span>Plugin audio</span></nav>
         <h1>Plugin audio</h1>
-        <p class="lede">Un compressore stereo con saturazione e allargamento Mid/Side, un sintetizzatore FM con sequencer interno e uno schema che trasforma ogni errore in una regola.</p>
+        <p class="lede">Un compressore stereo, un registratore a cassetta per il master, un campionatore a 16 pad, due sintetizzatori e uno schema che trasforma ogni errore in una regola.</p>
       </div>
-      <div class="info rv"><div><span class="label">Formati</span><span class="v">AU, VST3, standalone</span></div><div><span class="label">Periodo</span><span class="v">maggio – agosto 2026</span></div><div><span class="label">Stato</span><span class="v">compilati per Mac e Linux</span></div></div>
+      <div class="info rv"><div><span class="label">Formati</span><span class="v">AU, VST3, standalone</span></div><div><span class="label">Periodo</span><span class="v">maggio – ottobre 2026</span></div><div><span class="label">Stato</span><span class="v">compilati per Mac e Linux</span></div></div>
     </div>
     <div class="proj-visual rv"><div class="plate"><img class="wipe" src="../img/nemo.webp" width="509" height="758" alt="Interfaccia del compressore NEMO con fader, manopole e misuratore di livello"></div></div>
     <div class="proj-body">
@@ -40,9 +40,14 @@
             <div><h4>NEMO</h4><p>Compressore stereo con filtri, saturazione a nastro e allargamento Mid/Side. Mac (Apple Silicon e Intel) e Linux.</p></div>
             <div><h4>FreakFM</h4><p>Sintetizzatore FM a 4 operatori con sequencer interno, validato con pluginval al livello 8 senza errori.</p></div>
             <div><h4>AcidMoog</h4><p>Sintetizzatore di bassi tra TB-303 e Moog, con filtro ladder sovracampionato. In sviluppo.</p></div>
-            <div><h4>Plugin-Creator</h4><p>Lo schema di partenza per i plugin nuovi: ogni regola nasce da un errore trovato in NEMO e corretto.</p></div>
-          </div></section><section class="rv"><h2>Come lavoro su un plugin</h2><p>Un plugin audio elabora il suono decine di migliaia di volte al secondo, e un errore si sente subito. Per questo ogni plugin passa da pluginval, uno strumento che lo mette sotto sforzo come farebbe un vero programma musicale.</p></section><section class="rv"><h2>Da dove nasce</h2><p>Il suono mi ha sempre incuriosito, e a un certo punto volevo capire cosa succede davvero dentro gli effetti che si usano per lavorarlo. Il modo più diretto per capirlo era scriverne uno.</p></section><section class="rv imparato"><h2>Cosa mi ha insegnato</h2><p>NEMO ha richiesto sei revisioni dell'interfaccia. Da ogni errore ho ricavato una regola, e le regole sono diventate Plugin-Creator: lo schema da cui parte ogni plugin nuovo, perché lo stesso errore non si ripeta.</p></section></article>
-      <aside class="tech rv"><h2>Dietro le quinte</h2><dl><div><dt>Linguaggi e librerie</dt><dd>C++17, JUCE 8, CMake, Catch2</dd></div><div><dt>Verifica</dt><dd>test sull'elaborazione del suono, render di riferimento, pluginval, auval</dd></div></dl><div class="links"><a href="https://github.com/lberna777/NEMO-StereoCompressor" target="_blank" rel="noopener">NEMO <span>↗</span></a><a href="https://github.com/lberna777/plugin-creator" target="_blank" rel="noopener">Plugin-Creator <span>↗</span></a></div></aside>
+            <div><h4>C-60</h4><p>Piastra a cassetta per il master: registra a passate con punch in e out, rumore, wow e flutter. Validato con auval e pluginval al livello 10.</p></div>
+            <div><h4>RSU-10</h4><p>Campionatore a 16 pad ispirato allo Yamaha SU10, con scale, scratch e uscite separate. Si suona con la Maschine Mikro.</p></div>
+            <div><h4>Mikro Bridge</h4><p>App per Mac che trasforma la Maschine Mikro MK2 in un controller MIDI senza il software NI: pad, luci, display e accordi per grado.</p></div>
+            <div style="grid-column:1/-1"><h4>Plugin-Creator</h4><p>Lo schema di partenza per i plugin nuovi: ogni regola nasce da un errore trovato in NEMO e corretto.</p></div>
+          </div>
+          <figure class="tav-fig" style="margin-top:28px"><img class="wipe" src="../img/c60.webp" width="1291" height="506" alt="Interfaccia di C-60: cassetta, contatore, misuratori di livello e tasti della piastra" loading="lazy" style="width:100%;height:auto"><figcaption>C-60: la piastra a cassetta.</figcaption></figure>
+          <figure class="tav-fig" style="margin-top:20px"><img class="wipe" src="../img/rsu10.webp" width="1280" height="800" alt="Interfaccia di RSU-10: display con forma d'onda, manopole e 16 pad" loading="lazy" style="width:100%;height:auto"><figcaption>RSU-10: il campionatore a 16 pad.</figcaption></figure></section><section class="rv"><h2>Come lavoro su un plugin</h2><p>Un plugin audio elabora il suono decine di migliaia di volte al secondo, e un errore si sente subito. Per questo ogni plugin passa da pluginval, uno strumento che lo mette sotto sforzo come farebbe un vero programma musicale.</p></section><section class="rv"><h2>Da dove nasce</h2><p>Il suono mi ha sempre incuriosito, e a un certo punto volevo capire cosa succede davvero dentro gli effetti che si usano per lavorarlo. Il modo più diretto per capirlo era scriverne uno.</p></section><section class="rv imparato"><h2>Cosa mi ha insegnato</h2><p>NEMO ha richiesto sei revisioni dell'interfaccia. Da ogni errore ho ricavato una regola, e le regole sono diventate Plugin-Creator: lo schema da cui parte ogni plugin nuovo, perché lo stesso errore non si ripeta.</p></section></article>
+      <aside class="tech rv"><h2>Dietro le quinte</h2><dl><div><dt>Linguaggi e librerie</dt><dd>C++17, JUCE 8, CMake, Catch2</dd></div><div><dt>Verifica</dt><dd>test sull'elaborazione del suono, render di riferimento, pluginval, auval</dd></div></dl><div class="links"><a href="https://github.com/lberna777/NEMO-StereoCompressor" target="_blank" rel="noopener">NEMO <span>↗</span></a><a href="https://github.com/lberna777/plugin-creator" target="_blank" rel="noopener">C-60, RSU-10, Mikro Bridge e Plugin-Creator <span>↗</span></a></div></aside>
     </div>
   </div>
   <div class="wrap" style="padding-bottom:clamp(48px,7vw,88px)">
